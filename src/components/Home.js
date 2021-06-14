@@ -1,5 +1,6 @@
 import React from "react";
-import {Helmet} from "react-helmet";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "../assets/styles/normalize.css";
 import "../assets/styles/webflow.css";
 import "../assets/styles/99p-labs-mhci-2021.webflow.css";
@@ -18,7 +19,7 @@ export default function Home() {
               <a href="/" aria-current="page" className="nav-link light w-nav-link w--current">99P Labs x MHCI</a>
             </div>
             <nav role="navigation" className="nav-menu w-nav-menu">
-              <a href="/are-we-there-yet" className="nav-link light w-nav-link">Are We There Yet?</a>
+              <Link to="/are-we-there-yet" className="nav-link light w-nav-link">Are We There Yet?</Link>
               <a href="/team" className="nav-link light w-nav-link">Team</a>
               <a href="https://medium.com/mhci-99p-labs-capstone" target="_blank" rel="noreferrer" className="nav-link light w-nav-link">Blog</a>
             </nav>
