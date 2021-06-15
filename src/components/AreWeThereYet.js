@@ -25,7 +25,68 @@ import atTheDriveIn800 from "../assets/images/Group-158_1-p-800.png";
 import driveThruGraduation from "../assets/images/Group-158_2.png";
 import driveThruGraduation500 from "../assets/images/Group-158_2-p-500.png";
 import driveThruGraduation800 from "../assets/images/Group-158_2-p-800.png";
-
+import contextualInquiry from "../assets/images/Group-136.png";
+import contextualInquiry500 from "../assets/images/Group-136-p-500.png";
+import contextualInquiry800 from "../assets/images/Group-136-p-800.png";
+import pretotype from "../assets/images/Group-136_1.png";
+import pretotype500 from "../assets/images/Group-136_1-p-500.png";
+import pretotype800 from "../assets/images/Group-136_1-p-800.png";
+import speedDating from "../assets/images/Group-136_2.png";
+import speedDating500 from "../assets/images/Group-136_2-p-500.png";
+import speedDating800 from "../assets/images/Group-136_2-p-800.png";
+import opportunitySpaceLeft from "../assets/images/Group-156.png";
+import opportunitySpaceLeft500 from "../assets/images/Group-156-p-500.png";
+import opportunitySpaceRight from "../assets/images/Group-156_1.png";
+import slidingSeats from "../assets/images/Group-142.png";
+import starryNight from "../assets/images/Group-144.png";
+import aToB from "../assets/images/Insight-106.png";
+import aToB500 from "../assets/images/Insight-106-p-500.png";
+import aToB800 from "../assets/images/Insight-106-p-800.png";
+import aToB1080 from "../assets/images/Insight-106-p-1080.png";
+import ben from "../assets/images/Group-144_1.png";
+import insight2 from "../assets/images/insight2.png";
+import insight2500 from "../assets/images/insight2-p-500.png";
+import insight2800 from "../assets/images/insight2-p-800.png";
+import insight21080 from "../assets/images/insight2-p-1080.png";
+import lookingOutWindow from "../assets/images/Group-146.png";
+import insight3 from "../assets/images/insight3.png";
+import insight3500 from "../assets/images/insight3-p-500.png";
+import insight3800 from "../assets/images/insight3-p-800.png";
+import insight31080 from "../assets/images/insight3-p-1080.png";
+import kitchenTable from "../assets/images/Group-140_3.png";
+import kitchenTable500 from "../assets/images/Group-140_3-p-500.png";
+import kitchenTable800 from "../assets/images/Group-140_3-p-800.png";
+import friendsTailgate from "../assets/images/Group-140_4.png";
+import friendsTailgate500 from "../assets/images/Group-140_4-p-500.png";
+import friendsTailgate800 from "../assets/images/Group-140_4-p-800.png";
+import aquarium from "../assets/images/Group-140_6.png";
+import aquarium500 from "../assets/images/Group-140_6-p-500.png";
+import aquarium800 from "../assets/images/Group-140_6-p-800.png";
+import picnic from "../assets/images/Group-140_5.png";
+import picnic500 from "../assets/images/Group-140_5-p-500.png";
+import picnic800 from "../assets/images/Group-140_5-p-800.png";
+import insight4 from "../assets/images/insight4.png";
+import insight4500 from "../assets/images/insight4-p-500.png";
+import insight4800 from "../assets/images/insight4-p-800.png";
+import blankWall from "../assets/images/Group-153.png";
+import chalkDrawing from "../assets/images/Group-130.png";
+import momInBackseat from "../assets/images/Group-140.png";
+import momInBackseat500 from "../assets/images/Group-140-p-500.png";
+import momInBackseat800 from "../assets/images/Group-140-p-800.png";
+import childWithTablet from "../assets/images/Group-140_1.png";
+import childWithTablet500 from "../assets/images/Group-140_1-p-500.png";
+import childWithTablet800 from "../assets/images/Group-140_1-p-800.png";
+import kidOutWindow from "../assets/images/Group-140_2.png";
+import kidOutWindow500 from "../assets/images/Group-140_2-p-500.png";
+import kidOutWindow800 from "../assets/images/Group-140_2-p-800.png";
+import drawOnSeats from "../assets/images/Group-140_7.png";
+import drawOnSeats500 from "../assets/images/Group-140_7-p-500.png";
+import intercar from "../assets/images/Group-171.png";
+import intercar500 from "../assets/images/Group-171-p-500.png";
+import intercar800 from "../assets/images/Group-171-p-800.png";
+import cui from "../assets/images/Group-172.png";
+import cui500 from "../assets/images/Group-172-p-500.png";
+import cui800 from "../assets/images/Group-172-p-800.png";
 
 export default function AreWeThereYet() {
     return (
@@ -359,7 +420,7 @@ export default function AreWeThereYet() {
             <div className="columns-8 methods reverse w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-21 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-136.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-136-p-500.png 500w, images/Group-136-p-800.png 800w, images/Group-136.png 908w" alt="" className="article-image" />
+                <img src={contextualInquiry} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${contextualInquiry500} 500w, ${contextualInquiry800} 800w, ${contextualInquiry} 908w`} alt="" className="article-image" />
               </div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-16 w-col w-col-4 w-col-stack">
@@ -374,14 +435,14 @@ export default function AreWeThereYet() {
               </div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-16 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-136_1.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-136_1-p-500.png 500w, images/Group-136_1-p-800.png 800w, images/Group-136_1.png 908w" alt="" className="article-image" />
+                <img src={pretotype} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${pretotype500} 500w, ${pretotype800} 800w, ${pretotype} 908w`} alt="" className="article-image" />
               </div>
               <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="columns-8 methods reverse w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-23 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-136_2.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-136_2-p-500.png 500w, images/Group-136_2-p-800.png 800w, images/Group-136_2.png 908w" alt="" className="article-image" />
+                <img src={speedDating} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${speedDating500} 500w, ${speedDating800} 800w, ${speedDating} 908w`} alt="" className="article-image" />
               </div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-16 w-col w-col-4 w-col-stack">
@@ -406,7 +467,7 @@ export default function AreWeThereYet() {
               <div className="column-30 w-col w-col-4 w-col-stack">
                 <div className="div-block-38">
                   <h1 className="heading-8 light opportunity-space">People don’t see time spent in cars as valuable</h1>
-                </div><img src="../assets/images/Group-156.png" loading="lazy" sizes="100vw" srcSet="images/Group-156-p-500.png 500w, images/Group-156.png 572w" alt="" className="image-8" />
+                </div><img src={opportunitySpaceLeft} loading="lazy" sizes="100vw" srcSet={`${opportunitySpaceLeft500} 500w, ${opportunitySpaceLeft} 572w`} alt="" className="image-8" />
               </div>
               <div className="column-32 w-col w-col-4 w-col-stack">
                 <div className="div-block-38">
@@ -416,7 +477,7 @@ export default function AreWeThereYet() {
               <div className="column-31 w-col w-col-4 w-col-stack">
                 <div className="div-block-38">
                   <h1 className="heading-8 light opportunity-space">The constraints of the car are uniquely suited for reflection, creativity and connection.</h1>
-                </div><img src="../assets/images/Group-156_1.png" loading="lazy" alt="" className="image-8 family" />
+                </div><img src={opportunitySpaceRight} loading="lazy" alt="" className="image-8 family" />
               </div>
             </div>
           </div>
@@ -457,11 +518,11 @@ export default function AreWeThereYet() {
             <div className="columns-8 w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-18 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-142.png" loading="lazy" alt="" className="article-image" />
+                <img src={slidingSeats} loading="lazy" alt="" className="article-image" />
               </div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-144.png" loading="lazy" alt="" className="article-image" />
+                <img src={starryNight} loading="lazy" alt="" className="article-image" />
               </div>
               <div className="w-col w-col-1 w-col-stack"></div>
             </div>
@@ -537,7 +598,7 @@ export default function AreWeThereYet() {
             <div className="columns-9 w-row">
               <div className="w-col w-col-1"></div>
               <div className="column-27 w-col w-col-10">
-                <img src="../assets/images/Insight-106.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 80vw, (max-width: 1279px) 81vw, 83vw" srcSet="images/Insight-106-p-500.png 500w, images/Insight-106-p-800.png 800w, images/Insight-106-p-1080.png 1080w, images/Insight-106.png 1537w" alt="" className="image-7" />
+                <img src={aToB} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 80vw, (max-width: 1279px) 81vw, 83vw" srcSet={`${aToB500} 500w, ${aToB800} 800w, ${aToB1080} 1080w, ${aToB} 1537w`} alt="" className="image-7" />
               </div>
               <div className="w-col w-col-1"></div>
             </div>
@@ -566,7 +627,7 @@ export default function AreWeThereYet() {
               <div className="column-18 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-144_1.png" loading="lazy" alt="" className="article-image" />
+                <img src={ben} loading="lazy" alt="" className="article-image" />
               </div>
               <div className="w-col w-col-1 w-col-stack"></div>
             </div>
@@ -642,7 +703,7 @@ export default function AreWeThereYet() {
             <div className="columns-9 w-row">
               <div className="w-col w-col-1"></div>
               <div className="column-27 w-col w-col-10">
-                <img src="../assets/images/insight2.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 80vw, (max-width: 1279px) 81vw, 83vw" srcSet="images/insight2-p-500.png 500w, images/insight2-p-800.png 800w, images/insight2-p-1080.png 1080w, images/insight2.png 1585w" alt="" className="image-7" />
+                <img src={insight2} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 80vw, (max-width: 1279px) 81vw, 83vw" srcSet={`${insight2500} 500w, ${insight2800} 800w, ${insight21080} 1080w, ${insight2} 1585w`} alt="" className="image-7" />
               </div>
               <div className="w-col w-col-1"></div>
             </div>
@@ -671,7 +732,7 @@ export default function AreWeThereYet() {
               <div className="column-18 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-146.png" loading="lazy" alt="" className="article-image" />
+                <img src={lookingOutWindow} loading="lazy" alt="" className="article-image" />
               </div>
               <div className="w-col w-col-1 w-col-stack"></div>
             </div>
@@ -756,7 +817,7 @@ export default function AreWeThereYet() {
             <div className="columns-9 w-row">
               <div className="w-col w-col-1"></div>
               <div className="column-27 w-col w-col-10">
-                <img src="../assets/images/insight3.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 80vw, (max-width: 1279px) 81vw, 83vw" srcSet="images/insight3-p-500.png 500w, images/insight3-p-800.png 800w, images/insight3-p-1080.png 1080w, images/insight3.png 1170w" alt="" className="image-7" />
+                <img src={insight3} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 80vw, (max-width: 1279px) 81vw, 83vw" srcSet={`${insight3500} 500w, ${insight3800} 800w, ${insight31080} 1080w, ${insight3} 1170w`} alt="" className="image-7" />
               </div>
               <div className="w-col w-col-1"></div>
             </div>
@@ -785,7 +846,7 @@ export default function AreWeThereYet() {
               <div className="column-18 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-140_3.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-140_3-p-500.png 500w, images/Group-140_3-p-800.png 800w, images/Group-140_3.png 908w" alt="" className="article-image" /></div>
+                <img src={kitchenTable} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${kitchenTable500} 500w, ${kitchenTable800} 800w, ${kitchenTable} 908w`} alt="" className="article-image" /></div>
               <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="columns-8 w-row">
@@ -839,7 +900,7 @@ export default function AreWeThereYet() {
             <div className="columns-8 w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-18 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-140_4.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-140_4-p-500.png 500w, images/Group-140_4-p-800.png 800w, images/Group-140_4.png 908w" alt="" className="article-image" /></div>
+                <img src={friendsTailgate} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${friendsTailgate500} 500w, ${friendsTailgate800} 800w, ${friendsTailgate} 908w`} alt="" className="article-image" /></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-1 w-col-stack"></div>
@@ -856,7 +917,7 @@ export default function AreWeThereYet() {
             <div className="columns-8 w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-15 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-140_6.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-140_6-p-500.png 500w, images/Group-140_6-p-800.png 800w, images/Group-140_6.png 908w" alt="" className="article-image" /></div>
+                <img src={aquarium} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${aquarium500} 500w, ${aquarium800} 800w, ${aquarium} 908w`} alt="" className="article-image" /></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-26 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-1 w-col-stack"></div>
@@ -873,7 +934,7 @@ export default function AreWeThereYet() {
             <div className="columns-8 w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-15 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-140_5.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-140_5-p-500.png 500w, images/Group-140_5-p-800.png 800w, images/Group-140_5.png 908w" alt="" className="article-image" />
+                <img src={picnic} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${picnic500} 500w, ${picnic800} 800w, ${picnic} 908w`} alt="" className="article-image" />
               </div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-26 w-col w-col-4 w-col-stack"></div>
@@ -891,7 +952,7 @@ export default function AreWeThereYet() {
             <div className="columns-9 w-row">
               <div className="w-col w-col-1"></div>
               <div className="column-27 w-col w-col-10">
-                <img src="../assets/images/insight4.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 80vw, (max-width: 1279px) 81vw, 83vw" srcSet="images/insight4-p-500.png 500w, images/insight4-p-800.png 800w, images/insight4.png 1011w" alt="" className="image-7" />
+                <img src={insight4} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 80vw, (max-width: 1279px) 81vw, 83vw" srcSet={`${insight4500} 500w, ${insight4800} 800w, ${insight4} 1011w`} alt="" className="image-7" />
               </div>
               <div className="w-col w-col-1"></div>
             </div>
@@ -946,7 +1007,7 @@ export default function AreWeThereYet() {
               <div className="column-18 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-153.png" loading="lazy" alt="" className="article-image" /></div>
+                <img src={blankWall} loading="lazy" alt="" className="article-image" /></div>
               <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="columns-8 w-row">
@@ -963,7 +1024,7 @@ export default function AreWeThereYet() {
               <div className="column-18 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-130.png" loading="lazy" alt="" className="article-image" /></div>
+                <img src={chalkDrawing} loading="lazy" alt="" className="article-image" /></div>
               <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="columns-8 w-row">
@@ -1006,7 +1067,7 @@ export default function AreWeThereYet() {
             <div className="columns-8 w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-18 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-140.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-140-p-500.png 500w, images/Group-140-p-800.png 800w, images/Group-140.png 908w" alt="" className="article-image" />
+                <img src={momInBackseat} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${momInBackseat500} 500w, ${momInBackseat800} 800w, ${momInBackseat} 908w`} alt="" className="article-image" />
               </div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack"></div>
@@ -1024,7 +1085,7 @@ export default function AreWeThereYet() {
             <div className="columns-8 w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-18 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-140_1.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-140_1-p-500.png 500w, images/Group-140_1-p-800.png 800w, images/Group-140_1.png 908w" alt="" className="article-image" /></div>
+                <img src={childWithTablet} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${childWithTablet500} 500w, ${childWithTablet800} 800w, ${childWithTablet} 908w`} alt="" className="article-image" /></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-1 w-col-stack"></div>
@@ -1041,7 +1102,7 @@ export default function AreWeThereYet() {
             <div className="columns-8 w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-18 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-140_2.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-140_2-p-500.png 500w, images/Group-140_2-p-800.png 800w, images/Group-140_2.png 908w" alt="" className="article-image" />
+                <img src={kidOutWindow} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${kidOutWindow500} 500w, ${kidOutWindow800} 800w, ${kidOutWindow} 908w`} alt="" className="article-image" />
               </div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack"></div>
@@ -1071,7 +1132,7 @@ export default function AreWeThereYet() {
               <div className="column-18 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-140_7.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-140_7-p-500.png 500w, images/Group-140_7.png 908w" alt="" className="article-image" />
+                <img src={drawOnSeats} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${drawOnSeats500} 500w, ${drawOnSeats} 908w`} alt="" className="article-image" />
                 <p className="article-body-text caption">Fostering play using the physical surroundings of the car<br /></p>
               </div>
               <div className="w-col w-col-1 w-col-stack"></div>
@@ -1079,7 +1140,7 @@ export default function AreWeThereYet() {
             <div className="columns-8 w-row">
               <div className="w-col w-col-1 w-col-stack"></div>
               <div className="column-18 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-171.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-171-p-500.png 500w, images/Group-171-p-800.png 800w, images/Group-171.png 1002w" alt="" className="article-image" />
+                <img src={intercar} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${intercar500} 500w, ${intercar800} 800w, ${intercar} 1002w`} alt="" className="article-image" />
                 <p className="article-body-text caption">Developing destination-based activities that create new in-car and cross-car connections<br /></p>
               </div>
               <div className="w-col w-col-2 w-col-stack"></div>
@@ -1091,7 +1152,7 @@ export default function AreWeThereYet() {
               <div className="column-18 w-col w-col-4 w-col-stack"></div>
               <div className="w-col w-col-2 w-col-stack"></div>
               <div className="column-25 w-col w-col-4 w-col-stack">
-                <img src="../assets/images/Group-172.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-172-p-500.png 500w, images/Group-172-p-800.png 800w, images/Group-172.png 824w" alt="" className="article-image" />
+                <img src={cui} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${cui500} 500w, ${cui800} 800w, ${cui} 824w`} alt="" className="article-image" />
                 <p className="article-body-text caption">Exploring conversational agents and immersive sound systems to engage the whole car together<br /></p>
               </div>
               <div className="w-col w-col-1 w-col-stack"></div>
