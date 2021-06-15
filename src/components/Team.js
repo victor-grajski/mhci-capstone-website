@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 
 export default function Team() {
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `Team`;
+  });
+
     return (
       <div class="body-2">
         <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
