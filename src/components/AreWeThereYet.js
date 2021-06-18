@@ -114,7 +114,10 @@ export default function AreWeThereYet() {
                     <NavDropdown.Item href="#overview">Overview</NavDropdown.Item>
                     <NavDropdown.Item href="#domain-research">Domain Research</NavDropdown.Item>
                     <NavDropdown.Item href="#methods">Methods</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    <NavDropdown.Item href="#insights">Insights</NavDropdown.Item>
+                    <NavDropdown.Item href="#opportunity-space">Opportunity Space</NavDropdown.Item>
+                    <NavDropdown.Item href="#target-user">Target User</NavDropdown.Item>
+                    <NavDropdown.Item href="#next-steps">Next Steps</NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="/team" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Team</Nav.Link>
                   <Nav.Link href="https://medium.com/mhci-99p-labs-capstone" target="_blank" style={{'color': 'whitesmoke'}}>Blog</Nav.Link>
