@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 import chevron from "../assets/images/chevron-down.svg";
 import caseCarInterior from "../assets/images/Group-103.png";
@@ -103,10 +103,29 @@ export default function AreWeThereYet() {
           <div className="w-col w-col-5 w-col-small-5 w-col-tiny-5"></div>
         </div>
         <div id="overview" className="above-the-fold">
+        <Container style={{'z-index': '100001'}}>
+            <Navbar bg="transparent" variant="dark" expand="lg" style={{'background-color': 'transparent'}}>
+              <Navbar.Brand href="/" style={{'color': 'whitesmoke'}}>99P Labs x MHCI</Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
+              <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                <Nav className="ml-auto" defaultActiveKey="/are-we-there-yet">
+                  {/* <Nav.Link href="/are-we-there-yet" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Are We There Yet?</Nav.Link> */}
+                  <NavDropdown title="Are We There Yet?" id="basic-nav-dropdown" style={{'padding-right': '50px', 'color': 'rgba(255,255,255,1)'}}>
+                    <NavDropdown.Item href="#overview">Overview</NavDropdown.Item>
+                    <NavDropdown.Item href="#domain-research">Domain Research</NavDropdown.Item>
+                    <NavDropdown.Item href="#methods">Methods</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                  </NavDropdown>
+                  <Nav.Link href="/team" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Team</Nav.Link>
+                  <Nav.Link href="https://medium.com/mhci-99p-labs-capstone" target="_blank" style={{'color': 'whitesmoke'}}>Blog</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
+          </Container>
           <div className="div-block-33">
             <div className="div-block-30 hero"></div>
           </div>
-          <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar light awty atf w-nav">
+          {/* <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar light awty atf w-nav">
             <div className="container w-container">
               <div className="div-block-11">
                 <a href="index.html" className="nav-link light awty atf w-nav-link">99P Labs x MHCI</a>
@@ -127,7 +146,8 @@ export default function AreWeThereYet() {
                 <div className="icon light awty atf w-icon-nav-menu"></div>
               </div>
             </div>
-          </div>
+          </div> */}
+          
           <div className="columns-5 w-row">
             <div className="w-col w-col-2 w-col-stack"></div>
             <div className="column-12 w-col w-col-8 w-col-stack">
@@ -135,7 +155,7 @@ export default function AreWeThereYet() {
                 <h1 className="heading-6">Are We There Yet?</h1>
               </div>
               <div>
-                <p className="paragraph-7">Our client, 99P Labs, tasked us with investigating a future in which automobiles promote spontaneous social interaction between drivers, passengers and pedestrians within the same human-driven vehicles and across human-driven vehicles.<br /><br />From the outset, we recognized our project had a big problem space. Social interactions could mean any interaction between two or more people, and those interactions could happen in the car and between different cars. So where did we start given we had a destination but no map? We made our own! We first dove into domain research to understand what social and technological trends were emerging that might affect our work.<br /></p>
+                <p className="paragraph-7">Our client, 99P Labs, tasked us with investigating a future in which automobiles promote spontaneous social interaction between drivers, passengers and pedestrians within the same human-driven vehicles and across human-driven vehicles.<br /><br />From the outset, we recognized our project had a big problem space. So where did we start given we had a destination but no map? We made our own! We first dove into domain research to understand what social and technological trends were emerging that might affect our work.<br /></p>
               </div>
               <div className="div-block-13 awty">
                 <a href="#domain-research" className="w-inline-block">

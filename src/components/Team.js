@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 
 export default function Team() {
@@ -9,7 +10,7 @@ export default function Team() {
 
     return (
       <div class="body-2">
-        <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
+        {/* <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
           <div class="container w-container">
             <div class="div-block-11">
               <a href="index.html" class="nav-link dark w-nav-link">99P Labs x MHCI</a>
@@ -23,7 +24,39 @@ export default function Team() {
               <div class="icon w-icon-nav-menu"></div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <style type="text/css">
+          {`
+          .navbar-custom {
+
+
+
+
+          }
+          .navbar-custom a {
+
+          }
+          .nav-link-padding {
+            padding-left: 50px;
+          }
+          `}
+        </style>
+        <Container>
+          <Navbar expand="lg" >
+            <Navbar.Brand href="/">99P Labs x MHCI</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
+            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+              <Nav className="ml-auto">
+                <Nav.Link href="/are-we-there-yet" style={{'padding-right': '50px'}}>Are We There Yet?</Nav.Link>
+                <Nav.Link href="/team" style={{'padding-right': '50px'}}>Team</Nav.Link>
+                <Nav.Link href="https://medium.com/mhci-99p-labs-capstone" target="_blank">Blog</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </Container>
+        
+
+
         <div class="section-2">
           <div class="columns-3 w-row">
             <div class="w-col w-col-1 w-col-stack w-col-small-small-stack w-col-tiny-tiny-stack"></div>
