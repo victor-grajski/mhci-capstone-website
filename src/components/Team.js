@@ -48,7 +48,7 @@ export default function Team() {
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav className="ml-auto">
                 <Nav.Link href="/are-we-there-yet" style={{'padding-right': '50px'}}>Are We There Yet?</Nav.Link>
-                <Nav.Link href="/team" style={{'padding-right': '50px'}}>Team</Nav.Link>
+                <Nav.Link active={true} href="/team" style={{'padding-right': '50px'}}>Team</Nav.Link>
                 <Nav.Link href="https://medium.com/mhci-99p-labs-capstone" target="_blank">Blog</Nav.Link>
               </Nav>
             </Navbar.Collapse>

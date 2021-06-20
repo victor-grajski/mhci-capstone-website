@@ -110,7 +110,7 @@ export default function AreWeThereYet() {
               <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                 <Nav className="ml-auto" defaultActiveKey="/are-we-there-yet">
                   {/* <Nav.Link href="/are-we-there-yet" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Are We There Yet?</Nav.Link> */}
-                  <NavDropdown title="Are We There Yet?" id="basic-nav-dropdown" style={{'padding-right': '50px', 'color': 'rgba(255,255,255,1)'}}>
+                  <NavDropdown active={true} title="Are We There Yet?" id="basic-nav-dropdown" style={{'padding-right': '50px'}}>
                     <NavDropdown.Item href="#overview">Overview</NavDropdown.Item>
                     <NavDropdown.Item href="#domain-research">Domain Research</NavDropdown.Item>
                     <NavDropdown.Item href="#methods">Methods</NavDropdown.Item>
@@ -182,7 +182,7 @@ export default function AreWeThereYet() {
             </nav>
           </div>
         </div>
-        <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar light awty btf w-nav">
+        {/* <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar light awty btf w-nav">
           <div className="container w-container">
             <div className="div-block-11">
               <a href="index.html" className="nav-link light awty w-nav-link">99P Labs x MHCI</a>
@@ -203,7 +203,29 @@ export default function AreWeThereYet() {
               <div className="icon light awty w-icon-nav-menu"></div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Container className="fixed-top" style={{'z-index': '100', 'color': 'whitesmoke', 'margin-top': 0, 'padding': 0}}>
+            <Navbar bg="light" variant="light" expand="lg" style={{'padding': '20px 10px 10px 10px'}}>
+              <Navbar.Brand href="/">99P Labs x MHCI</Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
+              <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                <Nav className="ml-auto" defaultActiveKey="/are-we-there-yet">
+                  {/* <Nav.Link href="/are-we-there-yet" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Are We There Yet?</Nav.Link> */}
+                  <NavDropdown active={true} title="Are We There Yet?" id="basic-nav-dropdown" style={{'padding-right': '50px'}}>
+                    <NavDropdown.Item href="#overview">Overview</NavDropdown.Item>
+                    <NavDropdown.Item href="#domain-research">Domain Research</NavDropdown.Item>
+                    <NavDropdown.Item href="#methods">Methods</NavDropdown.Item>
+                    <NavDropdown.Item href="#insights">Insights</NavDropdown.Item>
+                    <NavDropdown.Item href="#opportunity-space">Opportunity Space</NavDropdown.Item>
+                    <NavDropdown.Item href="#target-user">Target User</NavDropdown.Item>
+                    <NavDropdown.Item href="#next-steps">Next Steps</NavDropdown.Item>
+                  </NavDropdown>
+                  <Nav.Link href="/team" style={{'padding-right': '50px'}}>Team</Nav.Link>
+                  <Nav.Link href="https://medium.com/mhci-99p-labs-capstone" target="_blank">Blog</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
+          </Container>
         <div id="domain-research" className="article-content domain-research">
           <div className="div-block-30 domain-research">
             <div className="div-block-34">

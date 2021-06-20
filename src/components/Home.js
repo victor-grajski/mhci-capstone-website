@@ -25,8 +25,8 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-        <Container class="fixed-top" style={{'z-index': '100000001'}}>
-            <Navbar fixed="top" bg="transparent" variant="dark" expand="lg" style={{'background-color': 'transparent'}}>
+        <Container style={{'z-index': '100000001'}}>
+            <Navbar bg="transparent" variant="dark" expand="lg" style={{'background-color': 'transparent', 'z-index': '100000001'}}>
               <Navbar.Brand href="/" style={{'color': 'whitesmoke'}}>99P Labs x MHCI</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
               <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
