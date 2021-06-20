@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </div> */}
         <Container style={{'z-index': '100000001'}}>
-            <Navbar bg="transparent" variant="dark" expand="lg" style={{'background-color': 'transparent', 'z-index': '100000001'}}>
+            <Navbar bg="transparent" variant="dark" expand="lg" style={{'background-color': 'transparent', 'z-index': '100000001', 'font-family': 'Raleway'}}>
               <Navbar.Brand href="/" style={{'color': 'whitesmoke'}}>99P Labs x MHCI</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
               <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
@@ -39,7 +39,7 @@ export default function Home() {
             </Navbar>
           </Container>
         <div data-poster-url={videoJpg} data-video-urls={videoMP4} data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video w-background-video w-background-video-atom">
-          <video autoPlay="autoplay" loop={false} style={{'backgroundImage':{videoJpg}}} muted="" playsInline="" data-wf-ignore="true" data-object-fit="cover">
+          <video autoPlay="autoplay" loop={true} style={{'backgroundImage':{videoJpg}}} muted="" playsInline="" data-wf-ignore="true" data-object-fit="cover">
             <source src={videoMP4} data-wf-ignore="true" />
             <source src={videoWebm} data-wf-ignore="true" />
           </video>

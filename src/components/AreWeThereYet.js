@@ -105,7 +105,7 @@ export default function AreWeThereYet() {
         <div id="overview" className="above-the-fold">
         <Container style={{'z-index': '100001'}}>
             <Navbar bg="transparent" variant="dark" expand="lg" style={{'background-color': 'transparent'}}>
-              <Navbar.Brand href="/" style={{'color': 'whitesmoke'}}>99P Labs x MHCI</Navbar.Brand>
+              <Navbar.Brand href="/" style={{'color': 'whitesmoke', 'font-family': 'Raleway'}}>99P Labs x MHCI</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
               <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                 <Nav className="ml-auto" defaultActiveKey="/are-we-there-yet">
@@ -206,7 +206,7 @@ export default function AreWeThereYet() {
         </div> */}
         <Container className="fixed-top" style={{'z-index': '100', 'color': 'whitesmoke', 'margin-top': 0, 'padding': 0}}>
             <Navbar bg="light" variant="light" expand="lg" style={{'padding': '20px 10px 10px 10px'}}>
-              <Navbar.Brand href="/">99P Labs x MHCI</Navbar.Brand>
+              <Navbar.Brand href="/" style={{'font-family': 'Raleway'}}>99P Labs x MHCI</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
               <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                 <Nav className="ml-auto" defaultActiveKey="/are-we-there-yet">

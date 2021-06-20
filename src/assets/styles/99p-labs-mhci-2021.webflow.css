@@ -1833,6 +1833,10 @@ a {
   line-height: 48px;
 }
 
+.button-2:hover {
+  color: #333;
+}
+
 .column-33 {
   z-index: 100;
 }

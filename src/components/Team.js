@@ -43,7 +43,7 @@ export default function Team() {
         </style>
         <Container>
           <Navbar expand="lg" >
-            <Navbar.Brand href="/">99P Labs x MHCI</Navbar.Brand>
+            <Navbar.Brand href="/" style={{'font-family': 'Raleway'}}>99P Labs x MHCI</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav className="ml-auto">
