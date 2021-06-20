@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Container, Navbar, Nav, } from 'react-bootstrap';
 import videoJpg from "../assets/videos/Honda_Background-poster-00001.jpg";
 import videoMP4 from "../assets/videos/Honda_Background-transcode.mp4";
 import videoWebm from "../assets/videos/Honda_Background-transcode.webm";

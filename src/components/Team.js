@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Navbar, Nav, } from "react-bootstrap";
+import homeIcon from '../assets/images/home-alt.svg';
+import chevron from '../assets/images/chevron-down_1.svg';
+import linkedIn from '../assets/images/iconmonstr-linkedin-3.png';
 
 
 export default function Team() {
@@ -88,7 +91,7 @@ export default function Team() {
             </div>
             <div class="w-col w-col-1 w-col-stack"></div>
           </div>
-          <a href="#cam" class="link-block-3 w-inline-block"><img src="images/chevron-down_1.svg" loading="lazy" alt="" class="image-5" /></a>
+          <a href="#cam" class="link-block-3 w-inline-block"><img src={chevron} loading="lazy" alt="" class="image-5" /></a>
         </div>
         <div id="cam" class="section-3">
           <div class="columns-4 w-row">
@@ -103,8 +106,8 @@ export default function Team() {
                   <h2 class="heading-4">Cam Davison</h2>
                   <h2 class="heading-5 hidden">Product Manager</h2>
                   <div class="div-block-27">
-                    <a href="https://www.linkedin.com/in/cam-davison-8379573a/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src="images/iconmonstr-linkedin-3.png" loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
-                    <a href="#" target="_blank" class="link-block-2 hidden w-inline-block"><img src="images/home-alt.svg" loading="lazy" alt="" class="portfolio-icon" /></a>
+                    <a href="https://www.linkedin.com/in/cam-davison-8379573a/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src={linkedIn} loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
+                    <a href="https://www.linkedin.com/in/cam-davison-8379573a/" target="_blank" rel="noreferrer" class="link-block-2 hidden w-inline-block"><img src={homeIcon} loading="lazy" alt="" class="portfolio-icon" /></a>
                   </div>
                   <div class="div-block-28">
                     <p class="paragraph-5">I have 10 years of industry experience spanning advertising strategy, branding, product management and design. Most recently, I lived in Singapore for three years working on UX and product design with startups. I’m looking forward to finding new and meaningful ways to add value to peoples&#x27; lives via mobility.</p>
@@ -138,8 +141,8 @@ export default function Team() {
                   <h2 class="heading-4">Jenny Ong</h2>
                   <h2 class="heading-5 hidden">Lead UX Researcher</h2>
                   <div class="div-block-27">
-                    <a href="https://www.linkedin.com/in/jong220/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src="images/iconmonstr-linkedin-3.png" loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
-                    <a href="https://jennyongnotes.com/" target="_blank" rel="noreferrer" class="link-block-2 w-inline-block"><img src="images/home-alt.svg" loading="lazy" alt="" class="portfolio-icon" /></a>
+                    <a href="https://www.linkedin.com/in/jong220/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src={linkedIn} loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
+                    <a href="https://jennyongnotes.com/" target="_blank" rel="noreferrer" class="link-block-2 w-inline-block"><img src={homeIcon} loading="lazy" alt="" class="portfolio-icon" /></a>
                   </div>
                   <div class="div-block-28">
                     <p class="paragraph-5">Formerly an aspiring corporate lawyer who studied business at Georgetown, I pivoted into the digital innovation space to be a part of an innovation incubator within one of the largest global corporate finance firms. Now studying HCI at Carnegie Mellon, I can’t wait to dive deeper into the future of the mobile social experience with 99P Labs!</p>
@@ -173,8 +176,8 @@ export default function Team() {
                   <h2 class="heading-4">Lauren Hung</h2>
                   <h2 class="heading-5 hidden">Lead Product Designer</h2>
                   <div class="div-block-27">
-                    <a href="https://www.linkedin.com/in/lauren-hung-83a96aa4/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src="images/iconmonstr-linkedin-3.png" loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
-                    <a href="http://laurenhung.com/" target="_blank" rel="noreferrer" class="link-block-2 w-inline-block"><img src="images/home-alt.svg" loading="lazy" alt="" class="portfolio-icon" /></a>
+                    <a href="https://www.linkedin.com/in/lauren-hung-83a96aa4/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src={linkedIn} loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
+                    <a href="http://laurenhung.com/" target="_blank" rel="noreferrer" class="link-block-2 w-inline-block"><img src={homeIcon} loading="lazy" alt="" class="portfolio-icon" /></a>
                   </div>
                   <div class="div-block-28">
                     <p class="paragraph-5">I am a research-driven product designer with a degree in Industrial Design from the Rhode Island School of Design. Before coming to MHCI, I worked as a UX designer in an IOT toy startup and UCLA’s HCI research lab. I’m driven by my curiosity about people’s needs and emerging technologies, and I am looking forward to creating prototypes to explore the future of social interaction in automobiles!</p>
@@ -208,8 +211,8 @@ export default function Team() {
                   <h2 class="heading-4">Sarah Hand</h2>
                   <h2 class="heading-5 hidden">Lead UX Researcher</h2>
                   <div class="div-block-27">
-                    <a href="https://www.linkedin.com/in/sarahjessamynhand/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src="images/iconmonstr-linkedin-3.png" loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
-                    <a href="https://sarahj930.github.io/sjh_portfolio/#/" target="_blank" rel="noreferrer" class="link-block-2 w-inline-block"><img src="images/home-alt.svg" loading="lazy" alt="" class="portfolio-icon" /></a>
+                    <a href="https://www.linkedin.com/in/sarahjessamynhand/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src={linkedIn} loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
+                    <a href="https://sarahj930.github.io/sjh_portfolio/#/" target="_blank" rel="noreferrer" class="link-block-2 w-inline-block"><img src={homeIcon} loading="lazy" alt="" class="portfolio-icon" /></a>
                   </div>
                   <div class="div-block-28">
                     <p class="paragraph-5">As a recent graduate in Psychology and Computer Science from UNC, I am interested in how human-centered design can support human’s well-being and bring about positive societal change. I came to MHCI to build my UX research and design skills before beginning my career in industry. I&#x27;m excited to explore technology-assisted social interaction from a novel perspective!</p>
@@ -243,8 +246,8 @@ export default function Team() {
                   <h2 class="heading-4">Victor Grajski</h2>
                   <h2 class="heading-5 hidden">Design Technologist</h2>
                   <div class="div-block-27">
-                    <a href="https://www.linkedin.com/in/victor-grajski/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src="images/iconmonstr-linkedin-3.png" loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
-                    <a href="https://victor-grajski.github.io" target="_blank" rel="noreferrer" class="link-block-2 w-inline-block"><img src="images/home-alt.svg" loading="lazy" alt="" class="portfolio-icon" /></a>
+                    <a href="https://www.linkedin.com/in/victor-grajski/" target="_blank" rel="noreferrer" class="link-block w-inline-block"><img src={linkedIn} loading="lazy" width="24" height="24" alt="" class="image-3" /></a>
+                    <a href="https://victor-grajski.github.io" target="_blank" rel="noreferrer" class="link-block-2 w-inline-block"><img src={homeIcon} loading="lazy" alt="" class="portfolio-icon" /></a>
                   </div>
                   <div class="div-block-28">
                     <p class="paragraph-5">Before coming to Carnegie Mellon to sharpen my UX skills, I worked in a variety of product development roles (Product Manager/Software Engineer) in companies of various sizes (startups/large companies), and I received a Master’s in Information Science from UC Berkeley. As an automotive enthusiast, I’m excited to work with 99P Labs designing the future of social interaction in automobiles!</p>
