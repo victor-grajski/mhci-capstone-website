@@ -38,7 +38,7 @@ export default function Home() {
             </Navbar>
           </Container>
         <div data-poster-url={videoJpg} data-video-urls={videoMP4} data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video w-background-video w-background-video-atom">
-          <video autoPlay="autoplay" loop={true} style={{'backgroundImage':{videoJpg}}} muted="" playsInline="" data-wf-ignore="true" data-object-fit="cover">
+          <video muted={true} autoPlay="autoplay" loop={true} style={{'backgroundImage':{videoJpg}}} playsInline={true} data-wf-ignore="true" data-object-fit="cover">
             <source src={videoMP4} data-wf-ignore="true" />
             <source src={videoWebm} data-wf-ignore="true" />
           </video>
