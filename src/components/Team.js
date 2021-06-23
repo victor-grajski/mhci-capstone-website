@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Navbar, Nav, } from "react-bootstrap";
+import { Scrollchor, swing, } from 'react-scrollchor';
 import homeIcon from '../assets/images/home-alt.svg';
 import chevron from '../assets/images/chevron-down_1.svg';
 import linkedIn from '../assets/images/iconmonstr-linkedin-3.png';
@@ -91,7 +92,14 @@ export default function Team() {
             </div>
             <div class="w-col w-col-1 w-col-stack"></div>
           </div>
-          <a href="#cam" class="link-block-3 w-inline-block"><img src={chevron} loading="lazy" alt="" class="image-5" /></a>
+          <Scrollchor
+            to="cam" 
+            className="link-block-3 w-inline-block"
+            animate={{ duration: 2000, easing: swing}}
+          >
+            <img src={chevron} loading="lazy" alt="" class="image-5" />
+          </Scrollchor>
+          {/* <a href="#cam" class="link-block-3 w-inline-block"><img src={chevron} loading="lazy" alt="" class="image-5" /></a> */}
         </div>
         <div id="cam" class="section-3">
           <div class="columns-4 w-row">

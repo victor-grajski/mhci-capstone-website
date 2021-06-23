@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Scrollchor, swing, } from 'react-scrollchor';
 
 import chevron from "../assets/images/chevron-down.svg";
 import caseCarInterior from "../assets/images/Group-103.png";
@@ -111,13 +112,69 @@ export default function AreWeThereYet() {
                 <Nav className="ml-auto" defaultActiveKey="/are-we-there-yet">
                   {/* <Nav.Link href="/are-we-there-yet" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Are We There Yet?</Nav.Link> */}
                   <NavDropdown active={true} title="Are We There Yet?" id="basic-nav-dropdown" style={{'padding-right': '50px'}}>
-                    <NavDropdown.Item href="#overview">Overview</NavDropdown.Item>
-                    <NavDropdown.Item href="#domain-research">Domain Research</NavDropdown.Item>
-                    <NavDropdown.Item href="#methods">Methods</NavDropdown.Item>
-                    <NavDropdown.Item href="#insights">Insights</NavDropdown.Item>
-                    <NavDropdown.Item href="#opportunity-space">Opportunity Space</NavDropdown.Item>
-                    <NavDropdown.Item href="#target-user">Target User</NavDropdown.Item>
-                    <NavDropdown.Item href="#next-steps">Next Steps</NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="overview"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Overview
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="domain-research"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Domain Research
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="methods"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Methods
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="insights"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Insights
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="opportunity-space"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Opportunity Space
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="target-user"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Target User
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="next-steps"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Next Steps
+                      </Scrollchor>
+                    </NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="/team" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Team</Nav.Link>
                   <Nav.Link href="https://medium.com/mhci-99p-labs-capstone" target="_blank" style={{'color': 'whitesmoke'}}>Blog</Nav.Link>
@@ -161,9 +218,16 @@ export default function AreWeThereYet() {
                 <p className="paragraph-7">Our client, 99P Labs, tasked us with investigating a future in which automobiles promote spontaneous social interaction between drivers, passengers and pedestrians within the same human-driven vehicles and across human-driven vehicles.<br /><br />From the outset, we recognized our project had a big problem space. So where did we start given we had a destination but no map? We made our own! We first dove into domain research to understand what social and technological trends were emerging that might affect our work.<br /></p>
               </div>
               <div className="div-block-13 awty">
-                <a href="#domain-research" className="w-inline-block">
+                <Scrollchor
+                  to="domain-research" 
+                  className="w-inline-block"
+                  animate={{ duration: 2000, easing: swing}}
+                >
                   <img src={chevron} loading="lazy" alt="" className="image-4" />
-                </a>
+                </Scrollchor>
+                {/* <a href="#domain-research" className="w-inline-block">
+                  <img src={chevron} loading="lazy" alt="" className="image-4" />
+                </a> */}
               </div>
             </div>
             <div className="column-34 w-col w-col-2 w-col-stack"></div>
@@ -172,13 +236,55 @@ export default function AreWeThereYet() {
         <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar light awty toc under w-nav">
           <div className="container toc w-container">
             <nav role="navigation" className="nav-menu toc w-nav-menu">
-              <a href="#overview" className="nav-link mobile-section toc w-nav-link">Overview</a>
-              <a href="#domain-research" className="nav-link mobile-section toc w-nav-link">Domain Research</a>
-              <a href="#methods" className="nav-link mobile-section toc w-nav-link">Methods</a>
-              <a href="#insights" className="nav-link mobile-section toc w-nav-link">Insights</a>
-              <a href="#opportunity-space" className="nav-link mobile-section toc w-nav-link">Opportunity Space</a>
-              <a href="#target-user" className="nav-link mobile-section toc w-nav-link">Target User</a>
-              <a href="#next-steps" className="nav-link mobile-section toc w-nav-link">Next Steps</a>
+              <Scrollchor 
+                to="overview" 
+                className="nav-link mobile-section toc w-nav-link"
+                animate={{ duration: 2000, easing: swing}}
+              >
+                Overview
+              </Scrollchor>
+              <Scrollchor
+                to="domain-research" 
+                className="nav-link mobile-section toc w-nav-link"
+                animate={{ duration: 2000, easing: swing}}
+              >
+                Domain Research
+              </Scrollchor>
+              <Scrollchor
+                to="methods" 
+                className="nav-link mobile-section toc w-nav-link"
+                animate={{ duration: 2000, easing: swing}}
+              >
+                Methods
+              </Scrollchor>
+              <Scrollchor
+                to="insights"
+                className="nav-link mobile-section toc w-nav-link"
+                animate={{ duration: 2000, easing: swing}}
+              >
+                Insights
+              </Scrollchor>
+              <Scrollchor
+                to="opportunity-space"
+                className="nav-link mobile-section toc w-nav-link"
+                animate={{ duration: 2000, easing: swing}}
+              >
+                Opportunity Space
+              </Scrollchor>
+              <Scrollchor
+                to="target-user" 
+                className="nav-link mobile-section toc w-nav-link"
+                animate={{ duration: 2000, easing: swing}}
+              >
+                Target User
+              </Scrollchor>
+              <Scrollchor 
+                to="next-steps" 
+                className="nav-link mobile-section toc w-nav-link"
+                animate={{ duration: 2000, easing: swing}}
+              >
+                Next Steps
+              </Scrollchor>
             </nav>
           </div>
         </div>
@@ -212,13 +318,69 @@ export default function AreWeThereYet() {
                 <Nav className="ml-auto" defaultActiveKey="/are-we-there-yet">
                   {/* <Nav.Link href="/are-we-there-yet" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Are We There Yet?</Nav.Link> */}
                   <NavDropdown active={true} title="Are We There Yet?" id="basic-nav-dropdown" style={{'padding-right': '50px'}}>
-                    <NavDropdown.Item href="#overview">Overview</NavDropdown.Item>
-                    <NavDropdown.Item href="#domain-research">Domain Research</NavDropdown.Item>
-                    <NavDropdown.Item href="#methods">Methods</NavDropdown.Item>
-                    <NavDropdown.Item href="#insights">Insights</NavDropdown.Item>
-                    <NavDropdown.Item href="#opportunity-space">Opportunity Space</NavDropdown.Item>
-                    <NavDropdown.Item href="#target-user">Target User</NavDropdown.Item>
-                    <NavDropdown.Item href="#next-steps">Next Steps</NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="overview"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Overview
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="domain-research"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Domain Research
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="methods"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Methods
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="insights"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Insights
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="opportunity-space"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Opportunity Space
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="target-user"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Target User
+                      </Scrollchor>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Scrollchor
+                        to="next-steps"
+                        animate={{ duration: 2000, easing: swing}}
+                        style={{ 'text-decoration': 'none', 'color': '#333' }}
+                      >
+                        Next Steps
+                      </Scrollchor>
+                    </NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="/team" style={{'padding-right': '50px'}}>Team</Nav.Link>
                   <Nav.Link href="https://medium.com/mhci-99p-labs-capstone" target="_blank">Blog</Nav.Link>
