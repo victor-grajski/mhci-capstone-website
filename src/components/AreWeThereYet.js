@@ -204,7 +204,7 @@ export default function AreWeThereYet() {
             </div>
           </div>
         </div> */}
-        <Container className="fixed-top" style={{'z-index': '100', 'color': 'whitesmoke', 'margin-top': 0, 'padding': 0}}>
+        <Container fluid className="fixed-top" style={{'z-index': '100', 'color': 'whitesmoke', 'margin-top': 0, 'padding': 0}}>
             <Navbar bg="light" variant="light" expand="lg" style={{'padding': '20px 10px 10px 10px'}}>
               <Navbar.Brand href="/" style={{'font-family': 'Raleway'}}>99P Labs x MHCI</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
