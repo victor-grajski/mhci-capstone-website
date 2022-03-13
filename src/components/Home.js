@@ -102,7 +102,7 @@ export default function Home() {
               </div>
             </div>
             <div class="div-block-2 case-study-link">
-            <Link to="/design" class="button-2 w-button">Explore our design process</Link>
+              <Link to="/design" class="button-2 w-button">Explore our design process</Link>
             </div>
             <div class="div-block-13">
               <Scrollchor

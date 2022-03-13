@@ -16,6 +16,7 @@ import Team from './components/Team';
 // TODO: test responsive
 // TODO: test links
 // TODO: test interactions
+// TODO: link hover style
 export default function App() {
   return (
     <Router>
