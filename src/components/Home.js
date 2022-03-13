@@ -98,7 +98,7 @@ export default function Home() {
               </div>
               <div class="landing-prototype-container">
                 <h2 class="landing-prototype-title">Martin</h2><img src={marbleShapes} loading="lazy" alt="" class="landing-prototype-image" />
-                <h1 class="landing-prototype-description">Marty combines haptic and kinetic input, the movement of the car, and cooperative play into a maze-solving game where seats become controllers.</h1>
+                <h1 class="landing-prototype-description">Martin combines haptic and kinetic input, the movement of the car, and cooperative play into a maze-solving game where seats become controllers.</h1>
               </div>
             </div>
             <div class="div-block-2 case-study-link">
