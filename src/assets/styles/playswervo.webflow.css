@@ -26,7 +26,7 @@ body {
 a {
   text-decoration: underline;
 }
-/* 
+
 .nav {
   width: 100%;
   height: 44px;
@@ -105,7 +105,7 @@ a {
   position: sticky;
   top: 0px;
   background-color: #f3f3f3;
-} */
+}
 
 .hero {
   position: static;
@@ -161,7 +161,7 @@ a {
   background-size: auto;
   background-repeat: repeat;
 }
-/* 
+
 .nav-menu {
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
@@ -269,7 +269,7 @@ a {
 
 .nav-link.mobile-section.toc.atf {
   color: #f5f5f5;
-} */
+}
 
 .scrolly-overlay {
   position: static;
@@ -2440,9 +2440,9 @@ a {
 }
 
 @media screen and (min-width: 1280px) {
-  /* .navbar {
+  .navbar {
     width: 100%;
-  } */
+  }
 
   ._1-5-5-1 {
     height: 100vh;
@@ -2528,7 +2528,7 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  /* .navbar {
+  .navbar {
     z-index: 100;
   }
 
@@ -2564,13 +2564,13 @@ a {
     position: sticky;
     border-bottom-style: none;
     background-color: transparent;
-  } */
+  }
 
   .body {
     background-size: auto;
     background-repeat: repeat-y;
   }
-/* 
+
   .nav-menu {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2621,7 +2621,7 @@ a {
     display: block;
     padding-left: 50px;
     font-size: 14px;
-  } */
+  }
 
   .scrolly-overlay {
     z-index: 100;
@@ -3079,14 +3079,14 @@ a {
 }
 
 @media screen and (max-width: 479px) {
-  /* .navbar.light {
+  .navbar.light {
     position: fixed;
     left: 0%;
     top: 0%;
     right: auto;
     bottom: auto;
     z-index: 1001;
-  } */
+  }
 
   .scrolly-overlay {
     position: static;

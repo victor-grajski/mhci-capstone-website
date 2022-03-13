@@ -5,13 +5,17 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './components/Home';
-// import Research from './components/Research';
+import Research from './components/Research';
+import Design from './components/Design';
 import Team from './components/Team';
 
 // TODO: Research
 // TODO: Design
 // TODO: Nav
 // TODO: cleanup
+// TODO: test responsive
+// TODO: test links
+// TODO: test interactions
 export default function App() {
   return (
     <Router>
@@ -21,10 +25,10 @@ export default function App() {
             <Team />
           </Route>
           <Route path="/design">
-            <Home />
+            <Design />
           </Route>
           <Route path="/research">
-            <Home />
+            <Research />
           </Route>
           <Route path="/">
             <Home />
