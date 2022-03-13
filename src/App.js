@@ -9,8 +9,6 @@ import Research from './components/Research';
 import Design from './components/Design';
 import Team from './components/Team';
 
-// TODO: Research
-// TODO: Design
 // TODO: Nav
 // TODO: cleanup
 // TODO: test responsive
