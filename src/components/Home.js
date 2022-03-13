@@ -1,11 +1,31 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Container, Navbar, Nav, } from 'react-bootstrap';
 import { Scrollchor, swing, } from 'react-scrollchor';
-import videoJpg from "../assets/videos/Honda_Background-poster-00001.jpg";
-import videoMP4 from "../assets/videos/Honda_Background-transcode.mp4";
-import videoWebm from "../assets/videos/Honda_Background-transcode.webm";
+import videoJpg from "../assets/videos/landing-clip-poster-00001.jpg";
+import videoMP4 from "../assets/videos/landing-clip-transcode.mp4";
+import videoWebm from "../assets/videos/landing-clip-transcode.webm";
 import chevron from "../assets/images/chevron-down.svg";
-
+import logo from '../assets/images/logo-transparent.png';
+import logoTagline from '../assets/images/logo-tagline.png';
+import logoTagline500 from '../assets/images/logo-tagline-p-500.png';
+import whatIsSwervoBackground from '../assets/images/Group-198.png';
+import whatIsSwervoBackground500 from '../assets/images/Group-198-p-500.png';
+import whatIsSwervoBackground800 from '../assets/images/Group-198-p-800.png';
+import whatIsSwervoBackground1080 from '../assets/images/Group-198-p-1080.png';
+import swervoDiagramGif from '../assets/images/Untitled_Artwork.gif';
+import moeShapes from '../assets/images/moe-shapes.png';
+import simonShapes from '../assets/images/simonshapes.png';
+import marbleShapes from '../assets/images/marble-shapes.png';
+import whySwervoBackground from '../assets/images/Group-199.png';
+import whySwervoBackground500 from '../assets/images/Group-199-p-500.png';
+import whySwervoBackground800 from '../assets/images/Group-199-p-800.png';
+import whySwervoBackground1080 from '../assets/images/Group-199-p-1080.png';
+import opportunitySpace from '../assets/images/Opportunity-Space.png';
+import opportunitySpace500 from '../assets/images/Opportunity-Space-p-500.png';
+import opportunitySpace800 from '../assets/images/Opportunity-Space-p-800.png';
+import opportunitySpace1080 from '../assets/images/Opportunity-Space-p-1080.png';
+import opportunitySpace1600 from '../assets/images/Opportunity-Space-p-1600.png';
 
 export default function Home() {
     return (
@@ -27,162 +47,82 @@ export default function Home() {
         </div> */}
         <Container style={{'z-index': '100000001'}}>
             <Navbar bg="transparent" variant="dark" expand="lg" style={{'background-color': 'transparent', 'z-index': '100000001', 'font-family': 'Raleway'}}>
-              <Navbar.Brand href="/" style={{'color': 'whitesmoke'}}>99P Labs x MHCI</Navbar.Brand>
+              <Navbar.Brand href="/" style={{'color': 'whitesmoke'}}><img src={logo} alt="logo" height="50px" /></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
               <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                 <Nav className="ml-auto">
-                  <Nav.Link href="/are-we-there-yet" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Are We There Yet?</Nav.Link>
+                  <Nav.Link href="/research" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Research</Nav.Link>
+                  <Nav.Link href="/design" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Design</Nav.Link>
                   <Nav.Link href="/team" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Team</Nav.Link>
                   <Nav.Link href="https://medium.com/mhci-99p-labs-capstone" target="_blank" style={{'color': 'whitesmoke'}}>Blog</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
           </Container>
-        <div data-poster-url={videoJpg} data-video-urls={videoMP4} data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video w-background-video w-background-video-atom">
+
+        <div data-poster-url={videoJpg} data-video-urls={videoMP4} data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom">
           <video muted={true} autoPlay="autoplay" loop={true} style={{'backgroundImage':{videoJpg}}} playsInline={true} data-wf-ignore="true" data-object-fit="cover">
             <source src={videoMP4} data-wf-ignore="true" />
             <source src={videoWebm} data-wf-ignore="true" />
           </video>
-          <div className="div-block-12"></div>
+          <div class="div-block-12"></div>
         </div>
-        <div className="section-5">
-          <div className="div-block-2">
-            <h1 className="heading">Our relationship with cars has soured</h1>
-            <div className="div-block-13">
-              <Scrollchor
-                to="Sunday-drive" 
+
+        <div class="section-5 intro wf-section">
+          <div class="div-block-2"><img src={logoTagline} loading="lazy" sizes="(max-width: 991px) 90vw, 38vw" srcset={`${logoTagline500} 500w, ${logoTagline} 2084w`} alt="" class="logo-tagline" />
+            <div class="div-block-13">
+            <Scrollchor
+                to="what-is-swervo" 
                 className="w-inline-block"
                 animate={{ duration: 1000, easing: swing}}
               >
                 <img src={chevron} loading="lazy" alt="" className="image-4" />
               </Scrollchor>
-              {/* <a href="#Sunday-drive" className="w-inline-block"><img src={chevron} loading="lazy" alt="" className="image-4" /></a> */}
             </div>
           </div>
         </div>
-        <div id="Sunday-drive" className="section-5">
-          <div className="div-block-2">
-            <h1 className="heading">How did the Sunday drive...</h1>
-            <div className="div-block-13">
+
+        <div id="what-is-swervo" class="section-5 what-is-swervo wf-section"><img src={whatIsSwervoBackground} loading="lazy" sizes="100vw" srcset={`${whatIsSwervoBackground500} 500w, ${whatIsSwervoBackground800} 800w, ${whatIsSwervoBackground1080} 1080w, ${whatIsSwervoBackground} 1440w`} alt="" class="image-10 what-is-swervo" />
+          <div class="div-block-2 what-is-swervo-description">
+            <h1 class="heading">What is Swervo?</h1>
+            <h1 class="landing-page-body">Swervo is a product-service ecosystem our team of <a href="https://www.hcii.cmu.edu/academics/mhci" target="_blank" class="link" rel="noreferrer">Carnegie Mellon MHCI</a> students developed for our Capstone project client, <a href="https://www.99plabs.com/" target="_blank" class="link" rel="noreferrer">99P Labs</a>, a digital proving ground that helps further develop mobility and energy concepts through customer empathy, data science, and business innovation.<br /><br />Swervo reimagines the car as a game console with the goal of fostering connection for families through unique combinations of play, interaction modalities, and the affordances of the car.</h1><img src={swervoDiagramGif} loading="lazy" alt="" class="landing-page-background-image" />
+            <h1 class="landing-page-body">To understand and validate the ideal combinations of play, interaction modalities, and affordances, we built three experiential prototypes - Moe, Simón, and Martin.</h1>
+            <div class="div-block-42">
+              <div class="landing-prototype-container">
+                <h2 class="landing-prototype-title">Moe</h2><img src={moeShapes} loading="lazy" alt="" class="landing-prototype-image" />
+                <h1 class="landing-prototype-description">Moe combines a visual and conversational interface with the changing exterior environment to facilitate self-disclosure between parents and kids.</h1>
+              </div>
+              <div class="landing-prototype-container">
+                <h2 class="landing-prototype-title">Simón</h2><img src={simonShapes} loading="lazy" alt="" class="landing-prototype-image" />
+                <h1 class="landing-prototype-description">Simón leverages the spatial arrangement of car seats and the physically confined space of a car through a haptic interface and cooperative play.</h1>
+              </div>
+              <div class="landing-prototype-container">
+                <h2 class="landing-prototype-title">Martin</h2><img src={marbleShapes} loading="lazy" alt="" class="landing-prototype-image" />
+                <h1 class="landing-prototype-description">Marty combines haptic and kinetic input, the movement of the car, and cooperative play into a maze-solving game where seats become controllers.</h1>
+              </div>
+            </div>
+            <div class="div-block-2 case-study-link">
+            <Link to="/design" class="button-2 w-button">Explore our design process</Link>
+            </div>
+            <div class="div-block-13">
               <Scrollchor
-                to="Sunday-jam" 
+                to="why-swervo" 
                 className="w-inline-block"
                 animate={{ duration: 1000, easing: swing}}
               >
                 <img src={chevron} loading="lazy" alt="" className="image-4" />
               </Scrollchor>
-              {/* <a href="#Sunday-jam" className="w-inline-block"><img src={chevron} loading="lazy" alt="" className="image-4" /></a> */}
             </div>
           </div>
         </div>
-        <div id="Sunday-jam" className="section-5">
-          <div className="div-block-2">
-            <h1 className="heading">become the Sunday traffic jam?</h1>
-            <div className="div-block-13">
-              <Scrollchor
-                to="drive-in" 
-                className="w-inline-block"
-                animate={{ duration: 1000, easing: swing}}
-              >
-                <img src={chevron} loading="lazy" alt="" className="image-4" />
-              </Scrollchor>
-              {/* <a href="#drive-in" className="w-inline-block"><img src={chevron} loading="lazy" alt="" className="image-4" /></a> */}
+
+        <div id="why-swervo" class="section-5 wf-section"><img src={whySwervoBackground} loading="lazy" sizes="100vw" srcset={`${whySwervoBackground500} 500w, ${whySwervoBackground800} 800w, ${whySwervoBackground1080} 1080w, ${whySwervoBackground} 1440w`} alt="" class="image-10 why-swervo" />
+          <div class="div-block-2">
+            <h1 class="heading">Why Swervo?</h1>
+            <h1 class="landing-page-body final">Families feel time in the car is lost, but they also experience the car as a space conducive to connection. As cars become more autonomous, families don&#x27;t want another venue to be pulled into their devices and away from each other.</h1><img src={opportunitySpace} loading="lazy" sizes="(max-width: 991px) 90vw, 75vw" srcset={`${opportunitySpace500} 500w, ${opportunitySpace800} 800w, ${opportunitySpace1080} 1080w, ${opportunitySpace1600} 1600w, ${opportunitySpace} 1808w`} alt="" class="landing-page-background-image" />
+            <div class="div-block-2 case-study-link">
+              <Link to="/research" class="button-2 w-button">Explore our research</Link>
             </div>
-          </div>
-        </div>
-        <div id="drive-in" className="section-5">
-          <div className="div-block-2">
-            <h1 className="heading">When did the drive-in...</h1>
-            <div className="div-block-13">
-              <Scrollchor
-                to="drive-thru" 
-                className="w-inline-block"
-                animate={{ duration: 1000, easing: swing}}
-              >
-                <img src={chevron} loading="lazy" alt="" className="image-4" />
-              </Scrollchor>
-              {/* <a href="#drive-thru" className="w-inline-block"><img src={chevron} loading="lazy" alt="" className="image-4" /></a> */}
-            </div>
-          </div>
-        </div>
-        <div id="drive-thru" className="section-5">
-          <div className="div-block-2">
-            <h1 className="heading">become the drive-thru?</h1>
-            <div className="div-block-13">
-              <Scrollchor
-                to="family-time" 
-                className="w-inline-block"
-                animate={{ duration: 1000, easing: swing}}
-              >
-                <img src={chevron} loading="lazy" alt="" className="image-4" />
-              </Scrollchor>
-              {/* <a href="#family-time" className="w-inline-block"><img src={chevron} loading="lazy" alt="" className="image-4" /></a> */}
-            </div>
-          </div>
-        </div>
-        <div id="family-time" className="section-5">
-          <div className="div-block-2">
-            <h1 className="heading">When did family time...</h1>
-            <div className="div-block-13">
-              <Scrollchor
-                to="screen-time" 
-                className="w-inline-block"
-                animate={{ duration: 1000, easing: swing}}
-              >
-                <img src={chevron} loading="lazy" alt="" className="image-4" />
-              </Scrollchor>
-              {/* <a href="#screen-time" className="w-inline-block"><img src={chevron} loading="lazy" alt="" className="image-4" /></a> */}
-            </div>
-          </div>
-        </div>
-        <div id="screen-time" className="section-5">
-          <div className="div-block-2">
-            <h1 className="heading">become screen time?</h1>
-            <div className="div-block-13">
-              <Scrollchor
-                to="this-way" 
-                className="w-inline-block"
-                animate={{ duration: 1000, easing: swing}}
-              >
-                <img src={chevron} loading="lazy" alt="" className="image-4" />
-              </Scrollchor>
-              {/* <a href="#this-way" className="w-inline-block"><img src={chevron} loading="lazy" alt="" className="image-4" /></a> */}
-            </div>
-          </div>
-        </div>
-        <div id="this-way" className="section-5">
-          <div className="div-block-2">
-            <h1 className="heading">It doesn&#x27;t have to be this way</h1>
-            <div className="div-block-13">
-              <Scrollchor
-                to="reimagine" 
-                className="w-inline-block"
-                animate={{ duration: 1000, easing: swing}}
-              >
-                <img src={chevron} loading="lazy" alt="" className="image-4" />
-              </Scrollchor>
-              {/* <a href="#reimagine" className="w-inline-block"><img src={chevron} loading="lazy" alt="" className="image-4" /></a> */}
-            </div>
-          </div>
-        </div>
-        <div id="reimagine" className="section-5">
-          <div className="div-block-2">
-            <h1 className="heading">Let&#x27;s reimagine social interaction in cars</h1>
-            <div className="div-block-13">
-              <Scrollchor
-                to="drive" 
-                className="w-inline-block"
-                animate={{ duration: 1000, easing: swing}}
-              >
-                <img src={chevron} loading="lazy" alt="" className="image-4" />
-              </Scrollchor>
-              {/* <a href="#drive" className="w-inline-block"><img src={chevron} loading="lazy" alt="" className="image-4" /></a> */}
-            </div>
-          </div>
-        </div>
-        <div id="drive" className="section-5">
-          <div className="div-block-2">
-            <a href="/are-we-there-yet" className="button-2 w-button">Take a drive with us</a>
           </div>
         </div>
       </div>

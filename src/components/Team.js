@@ -16,7 +16,7 @@ import logo from '../assets/images/logo-transparent.png'
 export default function Team() {
   useEffect(() => {
     // Update the document title using the browser API
-    document.title = `Team`;
+    document.title = `Team | Swervo`;
   });
 
     return (
