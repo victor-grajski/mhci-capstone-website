@@ -71,6 +71,7 @@ export default function Research() {
   useEffect(() => {
     // Update the document title using the browser API
     document.title = `Research | Swervo`;
+    window.scrollTo(0, 0);
   });
 
     return (

@@ -88,6 +88,7 @@ export default function Design() {
   useEffect(() => {
     // Update the document title using the browser API
     document.title = `Design | Swervo`;
+    window.scrollTo(0, 0);
   });
 
     return (
