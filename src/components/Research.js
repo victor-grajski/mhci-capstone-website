@@ -3,96 +3,70 @@ import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Scrollchor, swing, } from 'react-scrollchor';
 
 import chevron from "../assets/images/chevron-down.svg";
-// import caseCarInterior from "../assets/images/Group-103.png";
-// import caseCarInterior500 from "../assets/images/Group-103-p-500.png";
-// import caseCarInterior800 from "../assets/images/Group-103-p-800.png";
-// import teslaNetflix from "../assets/images/Group-103_1.png";
-// import teslaNetflix500 from "../assets/images/Group-103_1-p-500.png";
-// import teslaNetflix800 from "../assets/images/Group-103_1-p-800.png";
-// import peopleOnPhones from "../assets/images/Group-104.png";
-// import peopleOnPhones500 from "../assets/images/Group-104-p-500.png";
-// import peopleOnPhones800 from "../assets/images/Group-104-p-800.png";
-// import kidsOnPhones from "../assets/images/Group-104_1.png";
-// import kidsOnPhones500 from "../assets/images/Group-104_1-p-500.png";
-// import kidsOnPhones800 from "../assets/images/Group-104_1-p-800.png";
-// import twoKidsOnPhones from "../assets/images/Group-104_2.png";
-// import twoKidsOnPhones500 from "../assets/images/Group-104_2-p-500.png";
-// import twoKidsOnPhones800 from "../assets/images/Group-104_2-p-800.png";
-// import classicCarOnOpenRoad from "../assets/images/Group-158.png";
-// import classicCarOnOpenRoad500 from "../assets/images/Group-158-p-500.png";
-// import classicCarOnOpenRoad800 from "../assets/images/Group-158-p-800.png";
-// import atTheDriveIn from "../assets/images/Group-158_1.png";
-// import atTheDriveIn500 from "../assets/images/Group-158_1-p-500.png";
-// import atTheDriveIn800 from "../assets/images/Group-158_1-p-800.png";
-// import driveThruGraduation from "../assets/images/Group-158_2.png";
-// import driveThruGraduation500 from "../assets/images/Group-158_2-p-500.png";
-// import driveThruGraduation800 from "../assets/images/Group-158_2-p-800.png";
-// import contextualInquiry from "../assets/images/Group-136.png";
-// import contextualInquiry500 from "../assets/images/Group-136-p-500.png";
-// import contextualInquiry800 from "../assets/images/Group-136-p-800.png";
-// import pretotype from "../assets/images/Group-136_1.png";
-// import pretotype500 from "../assets/images/Group-136_1-p-500.png";
-// import pretotype800 from "../assets/images/Group-136_1-p-800.png";
-// import speedDating from "../assets/images/Group-136_2.png";
-// import speedDating500 from "../assets/images/Group-136_2-p-500.png";
-// import speedDating800 from "../assets/images/Group-136_2-p-800.png";
-// import opportunitySpaceLeft from "../assets/images/Group-156.png";
-// import opportunitySpaceLeft500 from "../assets/images/Group-156-p-500.png";
-// import opportunitySpaceRight from "../assets/images/Group-156_1.png";
-// import slidingSeats from "../assets/images/Group-142.png";
-// import starryNight from "../assets/images/Group-144.png";
-// import aToB from "../assets/images/Insight-106.png";
-// import aToB500 from "../assets/images/Insight-106-p-500.png";
-// import aToB800 from "../assets/images/Insight-106-p-800.png";
-// import aToB1080 from "../assets/images/Insight-106-p-1080.png";
-// import ben from "../assets/images/Group-144_1.png";
-// import insight2 from "../assets/images/insight2.png";
-// import insight2500 from "../assets/images/insight2-p-500.png";
-// import insight2800 from "../assets/images/insight2-p-800.png";
-// import insight21080 from "../assets/images/insight2-p-1080.png";
-// import lookingOutWindow from "../assets/images/Group-146.png";
-// import insight3 from "../assets/images/insight3.png";
-// import insight3500 from "../assets/images/insight3-p-500.png";
-// import insight3800 from "../assets/images/insight3-p-800.png";
-// import insight31080 from "../assets/images/insight3-p-1080.png";
-// import kitchenTable from "../assets/images/Group-140_3.png";
-// import kitchenTable500 from "../assets/images/Group-140_3-p-500.png";
-// import kitchenTable800 from "../assets/images/Group-140_3-p-800.png";
-// import friendsTailgate from "../assets/images/Group-140_4.png";
-// import friendsTailgate500 from "../assets/images/Group-140_4-p-500.png";
-// import friendsTailgate800 from "../assets/images/Group-140_4-p-800.png";
-// import aquarium from "../assets/images/Group-140_6.png";
-// import aquarium500 from "../assets/images/Group-140_6-p-500.png";
-// import aquarium800 from "../assets/images/Group-140_6-p-800.png";
-// import picnic from "../assets/images/Group-140_5.png";
-// import picnic500 from "../assets/images/Group-140_5-p-500.png";
-// import picnic800 from "../assets/images/Group-140_5-p-800.png";
-// import insight4 from "../assets/images/insight4.png";
-// import insight4500 from "../assets/images/insight4-p-500.png";
-// import insight4800 from "../assets/images/insight4-p-800.png";
-// import blankWall from "../assets/images/Group-153.png";
-// import chalkDrawing from "../assets/images/Group-130.png";
-// import momInBackseat from "../assets/images/Group-140.png";
-// import momInBackseat500 from "../assets/images/Group-140-p-500.png";
-// import momInBackseat800 from "../assets/images/Group-140-p-800.png";
-// import childWithTablet from "../assets/images/Group-140_1.png";
-// import childWithTablet500 from "../assets/images/Group-140_1-p-500.png";
-// import childWithTablet800 from "../assets/images/Group-140_1-p-800.png";
-// import kidOutWindow from "../assets/images/Group-140_2.png";
-// import kidOutWindow500 from "../assets/images/Group-140_2-p-500.png";
-// import kidOutWindow800 from "../assets/images/Group-140_2-p-800.png";
-// import drawOnSeats from "../assets/images/Group-140_7.png";
-// import drawOnSeats500 from "../assets/images/Group-140_7-p-500.png";
-// import intercar from "../assets/images/Group-171.png";
-// import intercar500 from "../assets/images/Group-171-p-500.png";
-// import intercar800 from "../assets/images/Group-171-p-800.png";
-// import cui from "../assets/images/Group-172.png";
-// import cui500 from "../assets/images/Group-172-p-500.png";
-// import cui800 from "../assets/images/Group-172-p-800.png";
-
 import logo from '../assets/images/logo-transparent.png';
+import case1 from '../assets/images/case1_1.png';
+import case1_500 from '../assets/images/case1_1-p-500.png';
+import case2 from '../assets/images/case2.png';
+import case2_500 from '../assets/images/case2-p-500.png';
+import attentionEconomy1 from '../assets/images/attention-economy1.png';
+import attentionEconomy1_500 from '../assets/images/attention-economy1-p-500.png';
+import attentionEconomy2 from '../assets/images/attention-economy2.png';
+import attentionEconomy2_500 from '../assets/images/attention-economy2-p-500.png';
+import attentionEconomy3 from '../assets/images/attention-economy3.png';
+import attentionEconomy3_500 from '../assets/images/attention-economy3-p-500.png';
+import perception1 from '../assets/images/perception1.png';
+import perception1_500 from '../assets/images/perception1-p-500.png';
+import covid1 from '../assets/images/Group-191.png';
+import covid1_500 from '../assets/images/Group-191-p-500.png';
+import covid2 from '../assets/images/covid2.png';
+import covid2_500 from '../assets/images/covid2-p-500.png';
+import methods1 from '../assets/images/Group-158.png';
+import methods1_500 from '../assets/images/Group-158-p-500.png';
+import methods1_800 from '../assets/images/Group-158-p-800.png';
+import methods2 from '../assets/images/Group-173.png';
+import methods2_500 from '../assets/images/Group-173-p-500.png';
+import methods2_800 from '../assets/images/Group-173-p-800.png';
+import methods3 from '../assets/images/Group-174.png';
+import methods3_500 from '../assets/images/Group-174-p-500.png';
+import methods3_800 from '../assets/images/Group-174-p-800.png';
+import insights1 from '../assets/images/Insight-106.png';
+import insights1_500 from '../assets/images/Insight-106-p-500.png';
+import insights1_800 from '../assets/images/Insight-106-p-800.png';
+import insights1_1080 from '../assets/images/Insight-106-p-1080.png';
+import starryNight from '../assets/images/starry-night.png';
+import starryNight_500 from '../assets/images/starry-night-p-500.png';
+import insight2 from '../assets/images/insight2.png';
+import insight2_500 from '../assets/images/insight2-p-500.png';
+import insight2_800 from '../assets/images/insight2-p-800.png';
+import insight2_1080 from '../assets/images/insight2-p-1080.png';
+import insight3 from '../assets/images/insight3.png';
+import insight3_500 from '../assets/images/insight3-p-500.png';
+import insight3_800 from '../assets/images/insight3-p-800.png';
+import insight3_1080 from '../assets/images/insight3-p-1080.png';
+import insight3_1 from '../assets/images/Group-187.png';
+import insight3_1_500 from '../assets/images/Group-187-p-500.png';
+import insight4 from '../assets/images/insight4.png';
+import insight4_500 from '../assets/images/insight4-p-500.png';
+import insight4_800 from '../assets/images/insight4-p-800.png';
+import insight4_1 from '../assets/images/Group-188.png';
+import insight4_1_500 from '../assets/images/Group-188-p-500.png';
+import insight4_2 from '../assets/images/Group-189.png';
+import insight4_2_500 from '../assets/images/Group-189-p-500.png';
+import insight4_3 from '../assets/images/image-22.png';
+import insight4_3_500 from '../assets/images/image-22-p-500.png';
+import insight4_4 from '../assets/images/Group-190.png';
+import insight4_4_500 from '../assets/images/Group-190-p-500.png';
+import insight4_4_800 from '../assets/images/Group-190-p-500.png';
+import insight4_4_1080 from '../assets/images/Group-190-p-500.png';
+import opportunitySpace1 from '../assets/images/Group-193.png';
+import opportunitySpace2 from '../assets/images/Group-194.png';
+import targetUser1 from '../assets/images/Group-195.png';
+import targetUser1_500 from '../assets/images/Group-195-p-500.png';
+import targetUser2 from '../assets/images/Group-196.png';
+import targetUser2_500 from '../assets/images/Group-196-p-500.png';
+import targetUser3 from '../assets/images/Group-197.png';
+import targetUser3_500 from '../assets/images/Group-197-p-500.png';
 
-// TODO: images
 export default function Research() {
   useEffect(() => {
     // Update the document title using the browser API
@@ -348,7 +322,7 @@ export default function Research() {
                 </p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-44 w-col w-col-4 w-col-stack"><img src="images/case1_1.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/case1_1-p-500.png 500w, images/case1_1.png 769w" alt="" className="article-image" /></div>
+                <div className="column-44 w-col w-col-4 w-col-stack"><img src={case1} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${case1_500} 500w, ${case1} 769w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -360,7 +334,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/case2.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/case2-p-500.png 500w, images/case2.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={case2} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${case2_500} 500w, ${case2} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             </div>
@@ -380,7 +354,7 @@ export default function Research() {
                 <p className="section-intro-text">In our hyper-connected world, our everyday experience is constrained by the <a href="https://econreview.berkeley.edu/paying-attention-the-attention-economy/" target="_blank" rel="noreferrer" className="article-link">attention economy</a>.</p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-54 w-col w-col-4 w-col-stack"><img src="images/attention-economy1.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/attention-economy1-p-500.png 500w, images/attention-economy1.png 771w" alt="" className="article-image" /></div>
+                <div className="column-54 w-col w-col-4 w-col-stack"><img src={attentionEconomy1} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${attentionEconomy1_500} 500w, ${attentionEconomy1} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -392,7 +366,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/attention-economy2.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/attention-economy2-p-500.png 500w, images/attention-economy2.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={attentionEconomy2} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${attentionEconomy2_500} 500w, ${attentionEconomy2} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -404,7 +378,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/attention-economy3.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/attention-economy3-p-500.png 500w, images/attention-economy3.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={attentionEconomy3} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${attentionEconomy3_500} 500w, ${attentionEconomy3} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             </div>
@@ -424,7 +398,7 @@ export default function Research() {
                 <p className="section-intro-text">In a recent <a href="https://www.zipcar.com/press/releases/third-annual-millennial-study" target="_blank" rel="noreferrer" className="article-link">survey</a> by ZipCar, nearly half of Millennials said they sometimes choose to spend time with friends online instead of driving to see them in person. </p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-46 w-col w-col-4 w-col-stack"><img src="images/perception1.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/perception1-p-500.png 500w, images/perception1.png 771w" alt="" className="article-image" /></div>
+                <div className="column-46 w-col w-col-4 w-col-stack"><img src={perception1} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${perception1_500} 500w, ${perception1} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -451,7 +425,7 @@ export default function Research() {
                 <p className="section-intro-text">In 2020, the car made a <a href="https://www.nny360.com/communitynews/business/cars-are-making-a-comeback-thanks-to-covid/article_73172663-6d85-5eb9-b2e1-a89077819e48.html" target="_blank" rel="noreferrer" className="article-link">comeback</a>. COVID made cars more <a href="https://www.theatlantic.com/health/archive/2020/08/millennials-are-buying-covid-cars/615325/" target="_blank" rel="noreferrer" className="article-link">attractive</a> as they once again symbolized <a href="https://www.cars.com/articles/americans-revive-the-sunday-drive-and-use-their-cars-as-much-needed-escape-during-the-covid-19-pandemic-according-to-new-research-by-cars-com-420899/" target="_blank" rel="noreferrer" className="article-link">freedom</a> and safety.</p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-46 w-col w-col-4 w-col-stack"><img src="images/Group-191.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-191-p-500.png 500w, images/Group-191.png 771w" alt="" className="article-image" /></div>
+                <div className="column-46 w-col w-col-4 w-col-stack"><img src={covid1} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${covid1_500} 500w, ${covid1} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -463,7 +437,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/covid2.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/covid2-p-500.png 500w, images/covid2.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={covid2} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${covid2_500} 500w, ${covid2} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             </div>
@@ -483,7 +457,7 @@ export default function Research() {
                 <p className="section-intro-text">To begin defining the current state for our project, we asked: &quot;What is the range of people and behaviors involved in social interaction in cars?&quot; <br /></p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-47 w-col w-col-4 w-col-stack"><img src="images/Group-158.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-158-p-500.png 500w, images/Group-158-p-800.png 800w, images/Group-158.png 908w" alt="" className="article-image" /></div>
+                <div className="column-47 w-col w-col-4 w-col-stack"><img src={methods1} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${methods1_500} 500w, ${methods1_800} 800w, ${methods1} 908w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -495,7 +469,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-173.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/Group-173-p-500.png 500w, images/Group-173-p-800.png 800w, images/Group-173.png 908w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={methods2} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${methods2_500} 500w, ${methods2_800} 800w, ${methods2} 908w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -514,7 +488,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-174.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/Group-174-p-500.png 500w, images/Group-174-p-800.png 800w, images/Group-174.png 908w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={methods3} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${methods3_500} 500w, ${methods3_800} 800w, ${methods3} 908w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -527,25 +501,25 @@ export default function Research() {
             </div>
         </div>
         <div id="insights" className="article-content insight-one wf-section">
-            <div className="div-block-30 opportunity-space">
-            <div className="columns-10 w-row">
-                <div className="column-30 w-col w-col-4 w-col-stack">
-                <div className="div-block-38">
-                    <h1 className="heading-8 light opportunity-space">People don’t see time spent in cars as valuable</h1>
-                </div><img src="images/Group-156_1.png" loading="lazy" sizes="100vw" srcSet="images/Group-156_1-p-500.png 500w, images/Group-156_1.png 572w" alt="" className="image-8" />
+            {/* <div className="div-block-30 opportunity-space">
+                <div className="columns-10 w-row">
+                    <div className="column-30 w-col w-col-4 w-col-stack">
+                    <div className="div-block-38">
+                        <h1 className="heading-8 light opportunity-space">People don’t see time spent in cars as valuable</h1>
+                    </div><img src={insights1} loading="lazy" sizes="100vw" srcSet={`${insights1_500} 500w, ${insights1} 572w`} alt="" className="image-8" />
+                    </div>
+                    <div className="column-32 w-col w-col-4 w-col-stack">
+                    <div className="div-block-38">
+                        <h1 className="heading-8 dark">Our Opportunity Space</h1>
+                    </div>
+                    </div>
+                    <div className="column-31 w-col w-col-4 w-col-stack">
+                    <div className="div-block-38">
+                        <h1 className="heading-8 light opportunity-space">The constraints of the car are uniquely suited for reflection, creativity and connection.</h1>
+                    </div><img src={insights1} loading="lazy" alt="" className="image-8 family" />
+                    </div>
                 </div>
-                <div className="column-32 w-col w-col-4 w-col-stack">
-                <div className="div-block-38">
-                    <h1 className="heading-8 dark">Our Opportunity Space</h1>
-                </div>
-                </div>
-                <div className="column-31 w-col w-col-4 w-col-stack">
-                <div className="div-block-38">
-                    <h1 className="heading-8 light opportunity-space">The constraints of the car are uniquely suited for reflection, creativity and connection.</h1>
-                </div><img src="images/Group-156.png" loading="lazy" alt="" className="image-8 family" />
-                </div>
-            </div>
-            </div>
+            </div> */}
             <div className="div-block-30 insights">
             <div className="div-block-34">
                 <h3 className="heading-7 light">Insights</h3>
@@ -568,7 +542,7 @@ export default function Research() {
                 <p className="section-intro-text">As we walked through the data, we saw a consistent underlying theme that people viewed the car as a utility. It could be more, but it’s primary goal and purpose was to help people get to their end destination.</p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-48 w-col w-col-4 w-col-stack"><img src="images/Insight-106.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Insight-106-p-500.png 500w, images/Insight-106-p-800.png 800w, images/Insight-106-p-1080.png 1080w, images/Insight-106.png 1537w" alt="" className="image-7" /></div>
+                <div className="column-48 w-col w-col-4 w-col-stack"><img src={insights1} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${insights1_500} 500w, ${insights1_800} 800w, ${insights1_1080} 1080w, ${insights1} 1537w`} alt="" className="image-7" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -580,7 +554,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/starry-night.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/starry-night-p-500.png 500w, images/starry-night.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={starryNight} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${starryNight_500} 500w, ${starryNight} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -659,7 +633,7 @@ export default function Research() {
                 <p className="section-intro-text">We heard over and over that time in the car was boring. But why? Why can’t you allievate boredom inside the car in the same way you alleviate it outside of the car?</p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-49 w-col w-col-4 w-col-stack"><img src="images/insight2.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/insight2-p-500.png 500w, images/insight2-p-800.png 800w, images/insight2-p-1080.png 1080w, images/insight2.png 1585w" alt="" className="image-7" /></div>
+                <div className="column-49 w-col w-col-4 w-col-stack"><img src={insight2} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${insight2_500} 500w, ${insight2_800} 800w, ${insight2_1080} 1080w, ${insight2} 1585w`} alt="" className="image-7" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -745,7 +719,7 @@ export default function Research() {
                 <p className="section-intro-text">While participants felt like time spent in the car was lost time, the reality is that the time exists. There has to be something happening in this time. So what do people do in this “lost” time?</p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-50 w-col w-col-4 w-col-stack"><img src="images/insight3.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/insight3-p-500.png 500w, images/insight3-p-800.png 800w, images/insight3-p-1080.png 1080w, images/insight3.png 1170w" alt="" className="image-7" /></div>
+                <div className="column-50 w-col w-col-4 w-col-stack"><img src={insight3} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${insight3_500} 500w, ${insight3_800} 800w, ${insight3_1080} 1080w, ${insight3} 1170w`} alt="" className="image-7" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -757,7 +731,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-187.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/Group-187-p-500.png 500w, images/Group-187.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={insight3_1} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${insight3_1_500} 500w, ${insight3_1} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -836,7 +810,7 @@ export default function Research() {
                 <p className="section-intro-text">Recalling our domain research, we found “death of conversation” as one major social trends brought on by social media and the attention economy. Yet when we dug deeper into primary research, we found that, in fact, the car is a place where meaningful conversations happen often.<br /></p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-51 w-col w-col-4 w-col-stack"><img src="images/insight4.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/insight4-p-500.png 500w, images/insight4-p-800.png 800w, images/insight4.png 1011w" alt="" className="image-7" /></div>
+                <div className="column-51 w-col w-col-4 w-col-stack"><img src={insight4} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${insight4_500} 500w, ${insight4_800} 800w, ${insight4} 1011w`} alt="" className="image-7" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -848,7 +822,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-188.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/Group-188-p-500.png 500w, images/Group-188.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={insight4_1} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${insight4_1_500} 500w, ${insight4_1} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -886,7 +860,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-189.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/Group-189-p-500.png 500w, images/Group-189.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={insight4_2} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${insight4_2_500} 500w, ${insight4_2} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -898,7 +872,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/image-22.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/image-22-p-500.png 500w, images/image-22.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={insight4_3} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${insight4_3_500} 500w, ${insight4_3} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -910,7 +884,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-190.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/Group-190-p-500.png 500w, images/Group-190-p-800.png 800w, images/Group-190-p-1080.png 1080w, images/Group-190.png 1542w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={insight4_4} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${insight4_4_500} 500w, ${insight4_4_800} 800w, ${insight4_4_1080} 1080w, images/Group-190.png 1542w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -962,7 +936,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-193.png" loading="lazy" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={opportunitySpace1} loading="lazy" alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -974,7 +948,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-194.png" loading="lazy" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={opportunitySpace2} loading="lazy" alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -1000,7 +974,7 @@ export default function Research() {
                 <p className="section-intro-text">Unique to this project is that we were given free reign to choose the target user group for whom it would be most valuable and exciting to envision the future of social interactions in and around cars. As you may have gathered, the American Family has stood out as a fascinating target group to explore this opportunity space further.</p>
                 </div>
                 <div className="w-col w-col-2 w-col-stack"></div>
-                <div className="column-52 w-col w-col-4 w-col-stack"><img src="images/Group-195.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet="images/Group-195-p-500.png 500w, images/Group-195.png 771w" alt="" className="article-image" /></div>
+                <div className="column-52 w-col w-col-4 w-col-stack"><img src={targetUser1} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 32vw, 33vw" srcSet={`${targetUser1_500} 500w, ${targetUser1} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-1 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -1012,7 +986,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-196.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/Group-196-p-500.png 500w, images/Group-196.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={targetUser2} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${targetUser2_500} 500w, ${targetUser2} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -1024,7 +998,7 @@ export default function Research() {
             </div>
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
-                <div className="column-45 w-col w-col-6 w-col-stack"><img src="images/Group-197.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet="images/Group-197-p-500.png 500w, images/Group-197.png 771w" alt="" className="article-image" /></div>
+                <div className="column-45 w-col w-col-6 w-col-stack"><img src={targetUser3} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, (max-width: 1279px) 48vw, 50vw" srcSet={`${targetUser3_500} 500w, ${targetUser3} 771w`} alt="" className="article-image" /></div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
             <div className="narrow-full-width w-row">
@@ -1038,8 +1012,6 @@ export default function Research() {
             </div>
             </div>
         </div>
-    
-        
       </div>
     );
   }
