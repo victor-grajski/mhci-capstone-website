@@ -90,7 +90,7 @@
 // import cui500 from "../assets/images/Group-172-p-500.png";
 // import cui800 from "../assets/images/Group-172-p-800.png";
 
-// export default function AreWeThereYet() {
+// export default function Research() {
 //   useEffect(() => {
 //     // Update the document title using the browser API
 //     document.title = `Are We There Yet?`;

@@ -55,12 +55,12 @@ export default function Team() {
         <Container>
           <Navbar expand="lg" style={{ fontFamily: 'Raleway' }}>
             <Navbar.Brand href="/"><img src={logo} alt="logo" height="50px" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" style={{'border-color': 'transparent'}} />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ borderColor: 'transparent' }} />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav className="ml-auto">
-                <Nav.Link href="/research" style={{'padding-right': '50px'}}>Research</Nav.Link>
-                <Nav.Link href="/design" style={{'padding-right': '50px'}}>Design</Nav.Link>
-                <Nav.Link active={true} href="/team" style={{'padding-right': '50px'}}>Team</Nav.Link>
+                <Nav.Link href="/research" style={{ paddingRight: '50px' }}>Research</Nav.Link>
+                <Nav.Link href="/design" style={{ paddingRight: '50px' }}>Design</Nav.Link>
+                <Nav.Link active={true} href="/team" style={{ paddingRight: '50px' }}>Team</Nav.Link>
                 <Nav.Link href="https://medium.com/mhci-99p-labs-capstone" target="_blank">Blog</Nav.Link>
               </Nav>
             </Navbar.Collapse>
