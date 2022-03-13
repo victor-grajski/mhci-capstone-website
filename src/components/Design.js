@@ -214,7 +214,7 @@ export default function Design() {
             <div className="narrow-full-width w-row">
                 <div className="w-col w-col-3 w-col-stack"></div>
                 <div className="column-45 w-col w-col-6 w-col-stack">
-                <p className="article-body-text">Not only is play an essential part of children’s development (<a href="https://repository.upenn.edu/gse_pubs/438/" target="_blank" className="article-link">Fantuzzo et al., 2004</a>), it is also a medium through which children form social connections (Fantuzzo et al. 2004, Panksepp 2007). Play has a central role in children’s relationship development because engaging in play is joyful, and the experience of sharing positive feelings in play leads to strengthening friendships” (<a href="https://eric.ed.gov/?id=ED522537" target="_blank" className="article-link">Lester and Russell, 2010</a>).</p>
+                <p className="article-body-text">Not only is play an essential part of children’s development (<a href="https://repository.upenn.edu/gse_pubs/438/" target="_blank" rel="noreferrer" className="article-link">Fantuzzo et al., 2004</a>), it is also a medium through which children form social connections (Fantuzzo et al. 2004, Panksepp 2007). Play has a central role in children’s relationship development because engaging in play is joyful, and the experience of sharing positive feelings in play leads to strengthening friendships” (<a href="https://eric.ed.gov/?id=ED522537" target="_blank" rel="noreferrer" className="article-link">Lester and Russell, 2010</a>).</p>
                 </div>
                 <div className="w-col w-col-3 w-col-stack"></div>
             </div>
