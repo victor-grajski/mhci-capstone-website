@@ -30,21 +30,6 @@ import opportunitySpace1600 from '../assets/images/Opportunity-Space-p-1600.png'
 export default function Home() {
     return (
       <div className="body no-progress-bar">
-        {/* <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar light w-nav">
-          <div className="container w-container">
-            <div className="div-block-11">
-              <a href="/" aria-current="page" className="nav-link light w-nav-link w--current">99P Labs x MHCI</a>
-            </div>
-            <nav role="navigation" className="nav-menu w-nav-menu">
-              <Link to="/are-we-there-yet" className="nav-link light w-nav-link">Are We There Yet?</Link>
-              <a href="/team" className="nav-link light w-nav-link">Team</a>
-              <a href="https://medium.com/mhci-99p-labs-capstone" target="_blank" rel="noreferrer" className="nav-link light w-nav-link">Blog</a>
-            </nav>
-            <div className="menu-button w-nav-button">
-              <div className="icon light w-icon-nav-menu"></div>
-            </div>
-          </div>
-        </div> */}
         <Container style={{'z-index': '100000001'}}>
             <Navbar bg="transparent" variant="dark" expand="lg" style={{'background-color': 'transparent', 'z-index': '100000001', 'font-family': 'Raleway'}}>
               <Navbar.Brand href="/" style={{'color': 'whitesmoke'}}><img src={logo} alt="logo" height="50px" /></Navbar.Brand>

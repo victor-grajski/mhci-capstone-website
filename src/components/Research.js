@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from 'react-router-dom'
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Scrollchor, swing, } from 'react-scrollchor';
 
@@ -86,8 +87,8 @@ export default function Research() {
                 <div className="div-block-30 hero research"></div>
             </div>
             <Container style={{ zIndex: 10000001 }}>
-                <Navbar bg="transparent" variant="dark" expand="lg" style={{ backgroundColor: 'transparent'}}>
-                <Navbar.Brand href="/" style={{ color: 'whitesmoke', fontFamily: 'Raleway' }}><img src={logo} alt="logo" height="50px" /></Navbar.Brand>
+                <Navbar bg="transparent" variant="dark" expand="lg" style={{ backgroundColor: 'transparent', fontFamily: 'Raleway'}}>
+                <Navbar.Brand href="/" style={{ color: 'whitesmoke' }}><img src={logo} alt="logo" height="50px" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ borderColor: 'transparent' }} />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="ml-auto" defaultActiveKey="/research">
@@ -226,67 +227,66 @@ export default function Research() {
         </div>
 
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="navbar light awty btf w-nav">
-            <Container fluid className="fixed-top container w-container" style={{ zIndex: '100', color: 'whitesmoke', marginTop: 0, padding: 0 }}>
+            <Container fluid className="fixed-top container w-container" style={{ zIndex: '100', color: 'whitesmoke', marginTop: 0, padding: 0, fontFamily: 'Raleway' }}>
                 <Navbar bg="light" variant="light" expand="lg" style={{ padding: '20px 10px 10px 10px' }}>
                 <Navbar.Brand href="/" style={{ fontFamily: 'Raleway'}}><img src={logo} alt="logo" height="50px" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ borderColor: 'transparent' }} />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="ml-auto" defaultActiveKey="/research">
-                    {/* <Nav.Link href="/are-we-there-yet" style={{'padding-right': '50px', 'color': 'whitesmoke'}}>Are We There Yet?</Nav.Link> */}
                     <NavDropdown active={true} title="Research" id="basic-nav-dropdown" style={{ paddingRight: '50px' }}>
                         <NavDropdown.Item>
-                        <Scrollchor
-                            to="overview"
-                            animate={{ duration: 2000, easing: swing}}
-                            style={{ textDecoration: 'none', color: '#333' }}
-                        >
-                            Overview
-                        </Scrollchor>
+                            <Scrollchor
+                                to="overview"
+                                animate={{ duration: 2000, easing: swing}}
+                                style={{ textDecoration: 'none', color: '#333' }}
+                            >
+                                Overview
+                            </Scrollchor>
                         </NavDropdown.Item>
                         <NavDropdown.Item>
-                        <Scrollchor
-                            to="domain-research"
-                            animate={{ duration: 2000, easing: swing}}
-                            style={{ textDecoration: 'none', color: '#333' }}
-                        >
-                            Domain Research
-                        </Scrollchor>
+                            <Scrollchor
+                                to="domain-research"
+                                animate={{ duration: 2000, easing: swing}}
+                                style={{ textDecoration: 'none', color: '#333' }}
+                            >
+                                Domain Research
+                            </Scrollchor>
                         </NavDropdown.Item>
                         <NavDropdown.Item>
-                        <Scrollchor
-                            to="methods"
-                            animate={{ duration: 2000, easing: swing}}
-                            style={{ textDecoration: 'none', color: '#333' }}
-                        >
-                            Methods
-                        </Scrollchor>
+                            <Scrollchor
+                                to="methods"
+                                animate={{ duration: 2000, easing: swing}}
+                                style={{ textDecoration: 'none', color: '#333' }}
+                            >
+                                Methods
+                            </Scrollchor>
                         </NavDropdown.Item>
                         <NavDropdown.Item>
-                        <Scrollchor
-                            to="insights"
-                            animate={{ duration: 2000, easing: swing}}
-                            style={{ textDecoration: 'none', color: '#333' }}
-                        >
-                            Insights
-                        </Scrollchor>
+                            <Scrollchor
+                                to="insights"
+                                animate={{ duration: 2000, easing: swing}}
+                                style={{ textDecoration: 'none', color: '#333' }}
+                            >
+                                Insights
+                            </Scrollchor>
                         </NavDropdown.Item>
                         <NavDropdown.Item>
-                        <Scrollchor
-                            to="opportunity-space"
-                            animate={{ duration: 2000, easing: swing}}
-                            style={{ textDecoration: 'none', color: '#333' }}
-                        >
-                            Opportunity Space
-                        </Scrollchor>
+                            <Scrollchor
+                                to="opportunity-space"
+                                animate={{ duration: 2000, easing: swing}}
+                                style={{ textDecoration: 'none', color: '#333' }}
+                            >
+                                Opportunity Space
+                            </Scrollchor>
                         </NavDropdown.Item>
                         <NavDropdown.Item>
-                        <Scrollchor
-                            to="target-user"
-                            animate={{ duration: 2000, easing: swing}}
-                            style={{ textDecoration: 'none', color: '#333' }}
-                        >
-                            Target User
-                        </Scrollchor>
+                            <Scrollchor
+                                to="target-user"
+                                animate={{ duration: 2000, easing: swing}}
+                                style={{ textDecoration: 'none', color: '#333' }}
+                            >
+                                Target User
+                            </Scrollchor>
                         </NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/design" style={{ paddingRight: '50px' }}>Design</Nav.Link>
@@ -502,25 +502,6 @@ export default function Research() {
             </div>
         </div>
         <div id="insights" className="article-content insight-one wf-section">
-            {/* <div className="div-block-30 opportunity-space">
-                <div className="columns-10 w-row">
-                    <div className="column-30 w-col w-col-4 w-col-stack">
-                    <div className="div-block-38">
-                        <h1 className="heading-8 light opportunity-space">People don’t see time spent in cars as valuable</h1>
-                    </div><img src={insights1} loading="lazy" sizes="100vw" srcSet={`${insights1_500} 500w, ${insights1} 572w`} alt="" className="image-8" />
-                    </div>
-                    <div className="column-32 w-col w-col-4 w-col-stack">
-                    <div className="div-block-38">
-                        <h1 className="heading-8 dark">Our Opportunity Space</h1>
-                    </div>
-                    </div>
-                    <div className="column-31 w-col w-col-4 w-col-stack">
-                    <div className="div-block-38">
-                        <h1 className="heading-8 light opportunity-space">The constraints of the car are uniquely suited for reflection, creativity and connection.</h1>
-                    </div><img src={insights1} loading="lazy" alt="" className="image-8 family" />
-                    </div>
-                </div>
-            </div> */}
             <div className="div-block-30 insights">
             <div className="div-block-34">
                 <h3 className="heading-7 light">Insights</h3>
@@ -1006,7 +987,7 @@ export default function Research() {
                 <div className="w-col w-col-3 w-col-stack"></div>
                 <div className="column-45 w-col w-col-6 w-col-stack">
                 <div className="div-block-2 case-study-link research-page">
-                    <a href="design.html" className="button-2 w-button">Explore our design process</a>
+                    <Link to="/design" className="button-2 w-button">Explore our design process</Link>
                 </div>
                 </div>
                 <div className="w-col w-col-3 w-col-stack"></div>

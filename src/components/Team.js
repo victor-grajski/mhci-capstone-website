@@ -11,48 +11,15 @@ import teamPhoto1080 from '../assets/images/team-photo-p-1080.png';
 import teamPhoto1600 from '../assets/images/team-photo-p-1600.png';
 import logo from '../assets/images/logo-transparent.png'
 
-// TODO: nav
 export default function Team() {
   useEffect(() => {
-    // Update the document title using the browser API
     document.title = `Team | Swervo`;
     window.scrollTo(0, 0);
   });
 
     return (
       <div className="body-2">
-        {/* <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar w-nav">
-          <div className="container w-container">
-            <div className="div-block-11">
-              <a href="index.html" className="nav-link dark w-nav-link">99P Labs x MHCI</a>
-            </div>
-            <nav role="navigation" className="nav-menu w-nav-menu">
-              <a href="are-we-there-yet.html" className="nav-link w-nav-link">are we there yet?</a>
-              <a href="team.html" aria-current="page" className="nav-link w-nav-link w--current">Team</a>
-              <a href="https://medium.com/mhci-99p-labs-capstone" target="_blank" rel="noreferrer" className="nav-link w-nav-link">Blog</a>
-            </nav>
-            <div className="menu-button w-nav-button">
-              <div className="icon w-icon-nav-menu"></div>
-            </div>
-          </div>
-        </div> */}
-        <style type="text/css">
-          {`
-          .navbar-custom {
-
-
-
-
-          }
-          .navbar-custom a {
-
-          }
-          .nav-link-padding {
-            padding-left: 50px;
-          }
-          `}
-        </style>
-        <Container>
+        <Container className="w-container">
           <Navbar expand="lg" style={{ fontFamily: 'Raleway' }}>
             <Navbar.Brand href="/"><img src={logo} alt="logo" height="50px" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ borderColor: 'transparent' }} />
@@ -133,7 +100,7 @@ export default function Team() {
                   <h2 className="heading-5 hidden">Product Manager</h2>
                   <div className="div-block-27">
                     <a href="https://www.linkedin.com/in/cam-davison-8379573a/" target="_blank" className="link-block w-inline-block" rel="noreferrer"><img src={linkedIn} loading="lazy" width="24" height="24" alt="" className="image-3" /></a>
-                    <a href="/#/" target="_blank" className="link-block-2 hidden w-inline-block" rel="noreferrer"><img src={homeIcon} loading="lazy" alt="" className="portfolio-icon" /></a>
+                    <a href="/#/" target="_blank" className="link-block-2 hidden w-inline-block" rel="noreferrer"><img src={homeIcon} loading="lazy" alt="" className="portfolio-icon"/></a>
                   </div>
                   <div className="div-block-28">
                     <p className="paragraph-5">I have 10 years of industry experience spanning advertising strategy, branding, product management and design. Most recently, I lived in Singapore for three years working on UX and product design with startups. I’m honored to have found new and meaningful ways to add value to families&#x27; lives via mobility.</p>
@@ -169,7 +136,7 @@ export default function Team() {
                   <h2 className="heading-5 hidden">Lead UX Researcher</h2>
                   <div className="div-block-27">
                     <a href="https://www.linkedin.com/in/jong220/" target="_blank" className="link-block w-inline-block" rel="noreferrer"><img src={linkedIn} loading="lazy" width="24" height="24" alt="" className="image-3" /></a>
-                    <a href="https://jennyongnotes.com/" target="_blank" className="link-block-2 w-inline-block" rel="noreferrer"><img src={homeIcon} loading="lazy" alt="" className="portfolio-icon" /></a>
+                    <a href="https://jennyongnotes.com/" target="_blank" className="link-block-2 hidden w-inline-block" rel="noreferrer"><img src={homeIcon} loading="lazy" alt="" className="portfolio-icon" /></a>
                   </div>
                   <div className="div-block-28">
                     <p className="paragraph-5">Formerly an aspiring corporate lawyer who studied business at Georgetown, I pivoted into the digital innovation space to be a part of an innovation incubator within one of the largest global corporate finance firms. At Carnegie Mellon, I&#x27;m so excited to have played a role in designing the future of the mobile social experience with 99P Labs!</p>
@@ -205,7 +172,7 @@ export default function Team() {
                   <h2 className="heading-5 hidden">Lead Product Designer</h2>
                   <div className="div-block-27">
                     <a href="https://www.linkedin.com/in/lauren-hung-83a96aa4/" target="_blank" className="link-block w-inline-block" rel="noreferrer"><img src={linkedIn} loading="lazy" width="24" height="24" alt="" className="image-3" /></a>
-                    <a href="http://laurenhung.com/" target="_blank" className="link-block-2 w-inline-block" rel="noreferrer"><img src={homeIcon} loading="lazy" alt="" className="portfolio-icon" /></a>
+                    <a href="http://laurenhung.com/" target="_blank" className="link-block-2 hidden w-inline-block" rel="noreferrer"><img src={homeIcon} loading="lazy" alt="" className="portfolio-icon" /></a>
                   </div>
                   <div className="div-block-28">
                     <p className="paragraph-5">I am a research-driven product designer with a degree in Industrial Design from the Rhode Island School of Design. Before coming to MHCI, I worked as a UX designer in an IOT toy startup and UCLA’s HCI research lab. I’m driven by my curiosity about people’s needs and emerging technologies, and I am excited I got to build prototypes that explore the future of social interaction in automobiles!</p>
@@ -241,7 +208,7 @@ export default function Team() {
                   <h2 className="heading-5 hidden">Lead UX Researcher</h2>
                   <div className="div-block-27">
                     <a href="https://www.linkedin.com/in/sarahjessamynhand/" target="_blank" className="link-block w-inline-block" rel="noreferrer"><img src={linkedIn} loading="lazy" width="24" height="24" alt="" className="image-3" /></a>
-                    <a href="https://sarahj930.github.io/sjh_portfolio/#/" target="_blank" className="link-block-2 w-inline-block" rel="noreferrer"><img src={homeIcon} loading="lazy" alt="" className="portfolio-icon" /></a>
+                    <a href="https://sarahj930.github.io/sjh_portfolio/#/" target="_blank" className="link-block-2 hidden w-inline-block" rel="noreferrer"><img src={homeIcon} loading="lazy" alt="" className="portfolio-icon" /></a>
                   </div>
                   <div className="div-block-28">
                     <p className="paragraph-5">As a recent graduate in Psychology and Computer Science from UNC, I am interested in how human-centered design can support human’s well-being and bring about positive societal change. I came to MHCI to build my UX research and design skills before beginning my career in industry. I&#x27;m excited to have explored technology-assisted social interaction from a novel perspective!</p>

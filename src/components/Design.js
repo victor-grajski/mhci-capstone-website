@@ -86,7 +86,6 @@ import value6 from '../assets/images/Group-271.png';
 
 export default function Design() {
   useEffect(() => {
-    // Update the document title using the browser API
     document.title = `Design | Swervo`;
     window.scrollTo(0, 0);
   });
@@ -103,8 +102,8 @@ export default function Design() {
                 <div className="div-block-30 hero design"></div>
             </div>
             <Container style={{ zIndex: 10000001 }}>
-                <Navbar bg="transparent" variant="dark" expand="lg" style={{ backgroundColor: 'transparent'}}>
-                <Navbar.Brand href="/" style={{ color: 'whitesmoke', fontFamily: 'Raleway' }}><img src={logo} alt="logo" height="50px" /></Navbar.Brand>
+                <Navbar bg="transparent" variant="dark" expand="lg" style={{ backgroundColor: 'transparent', fontFamily: 'Raleway'}}>
+                <Navbar.Brand href="/" style={{ color: 'whitesmoke' }}><img src={logo} alt="logo" height="50px" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ borderColor: 'transparent' }} />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="ml-auto" defaultActiveKey="/design">
@@ -211,13 +210,13 @@ export default function Design() {
         </div>
 
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="navbar light awty btf w-nav">
-            <Container fluid className="fixed-top container w-container" style={{ zIndex: '100', color: 'whitesmoke', marginTop: 0, padding: 0 }}>
+            <Container fluid className="fixed-top container w-container" style={{ zIndex: '100', color: 'whitesmoke', marginTop: 0, padding: 0, fontFamily: 'Raleway' }}>
                 <Navbar bg="light" variant="light" expand="lg" style={{ padding: '20px 10px 10px 10px' }}>
                 <Navbar.Brand href="/" style={{ fontFamily: 'Raleway'}}><img src={logo} alt="logo" height="50px" /></Navbar.Brand>
-                <Nav.Link href="/research" style={{ paddingRight: '50px' }}>Research</Nav.Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ borderColor: 'transparent' }} />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav className="ml-auto" defaultActiveKey="/design">
+                    <Nav.Link href="/research" style={{ paddingRight: '50px' }}>Research</Nav.Link>
                     <NavDropdown active={true} title="Design" id="basic-nav-dropdown" style={{ paddingRight: '50px' }}>
                         <NavDropdown.Item>
                             <Scrollchor

@@ -9,18 +9,10 @@ import Research from './components/Research';
 import Design from './components/Design';
 import Team from './components/Team';
 
-// TODO: Nav
-// TODO: cleanup
-// TODO: test responsive
-// TODO: test links
-// TODO: test interactions
-// TODO: link hover style
-// TODO: test delete index.css
-// TODO: test delete <Router><div>
+// TODO: Nav max width
 export default function App() {
   return (
     <Router>
-      <div>
         <Switch>
         <Route path="/team">
             <Team />
@@ -35,7 +27,6 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }

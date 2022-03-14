@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:light,regular,medium,semi-bold,bold,extra-bold,black');
 
+a:hover {
+  color: unset!important;
+}
+
 .w-embed-youtubevideo {
   width: 100%;
   position: relative;
@@ -1168,7 +1172,7 @@ a {
 }
 
 .portfolio-icon {
-  display: none;
+  /* display: none; */
   width: 24px;
   height: 24px;
 }
