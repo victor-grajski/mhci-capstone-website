@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:light,regular,medium,semi-bold,bold,extra-bold,black');
 
-a:hover {
-  color: unset!important;
-}
-
 .w-embed-youtubevideo {
   width: 100%;
   position: relative;
@@ -2087,6 +2083,9 @@ a {
   font-size: 36px;
   line-height: 48px;
 }
+.button-2:hover {
+  color: #333;
+}
 
 .column-33 {
   z-index: 100;
@@ -2112,6 +2111,9 @@ a {
   color: #333;
   font-weight: 600;
   text-decoration: underline;
+}
+.article-link:hover {
+  color: #333;
 }
 
 .covid {
@@ -2371,6 +2373,10 @@ a {
 .link {
   color: #f3f3f3;
   font-weight: 700;
+}
+
+.link:hover {
+  color: #f3f3f3;
 }
 
 .div-block-42 {
