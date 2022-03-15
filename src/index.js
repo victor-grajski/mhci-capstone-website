@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import "./assets/styles/normalize.css";
 import "./assets/styles/webflow.css";
-import "./assets/styles/99p-labs-mhci-2021.webflow.css";
+import "./assets/styles/playswervo.webflow.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
